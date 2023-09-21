@@ -1,0 +1,26 @@
+@mixin hover_text($color,$text-decoration){
+	color:$color;
+	text-decoration:$text-decoration;
+}
+@mixin img_fix($width,$max-width,$height,$object-fit){
+	width:$width;
+	height:$height;
+	max-width:$max-width;
+	object-fit:$object-fit;
+}
+@mixin full_width{
+	width: 100%;
+	float:left;
+}
+/*== Color ==*/
+	$background-white:#fff;
+	$background-custom:#2b97a3;
+	$background-custom-1:#2b97a3;
+	$base-hover-background:#2b97a3;
+	$base-hover-color:#2b97a3;
+	$color-white:#fff;
+	$color-black:#000;
+	$color-primary:#2b97a3;
+	$color-custom:#7e7e7e;
+	$color-custom-1:#2b97a3;
+/*== End Color ==*/

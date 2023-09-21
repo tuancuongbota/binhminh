@@ -1,0 +1,46 @@
+/*== OWL ==*/
+.owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  z-index: 9;
+  height: 35px;
+  line-height: 34px;
+  width: 35px;
+  text-align: center;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  outline: 0 none;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all 0.3s linear 0s;
+  touch-action: manipulation;
+  opacity: 0;
+  font-size: 35px;
+}
+.owl-prev {
+  left: -30px;
+  @media (max-width: 1359px){
+    left: -15px;
+  }
+}
+.owl-next {
+  right: -30px;
+  @media (max-width: 1359px){
+    right: -15px;
+  }
+}
+.owl-theme:hover .owl-nav [class*=owl-] {
+ opacity: 0.7;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+ opacity: 1;
+}
+.owl-theme .owl-nav [class*=owl-]:hover i{
+  color: $color-custom-1;
+}
+.owl-theme .owl-nav{
+  margin:0;
+}
+/*== End OWL ==*/

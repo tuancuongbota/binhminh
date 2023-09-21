@@ -1,0 +1,41 @@
+.nxtActiveMenu {
+  > li {
+    > a {
+      font-size: 16px;
+      font-weight: 700;
+      color: #000;
+      text-transform: uppercase;
+      position: relative;
+      display: block;
+      padding: 5px 0;
+
+      &:hover {
+        color: #1b1eab;
+      }
+
+      &:before {
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #fec83f;
+      }
+    }
+
+    &:hover > a:before {
+      width: 100%;
+    }
+
+    padding: 0px 17px 0px 17px;
+    position: relative;
+  }
+
+  display: flex;
+  margin-right: 30px;
+}

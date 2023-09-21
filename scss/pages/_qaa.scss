@@ -1,0 +1,298 @@
+.bota_category_block_select_top {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: rgb(255, 255, 255);
+}
+
+.bota_cate_top_title {
+  h1 {
+    line-height: 1.3;
+    color: #111;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 13px;
+  }
+
+  margin-bottom: 30px;
+}
+
+.bota_cate_top_name {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 13px;
+}
+
+.bota_cate_top_list {
+  position: relative;
+}
+
+.bota_faq_item {
+  &:hover .bota_faq_question_name {
+    color: #dd0c0c;
+  }
+
+  .toggle {
+    border-radius: 999px;
+    height: 42px;
+    left: 0;
+    margin-right: 5px;
+    position: absolute;
+    top: 0.3em;
+    transform-origin: 50% 47%;
+    width: 39px;
+    border: none;
+    background: none;
+    line-height: 1;
+    opacity: .6;
+    padding: 0;
+  }
+}
+
+.toggle i {
+  font-size: 28px;
+  transition: all .3s;
+}
+
+.bota_faq_item:hover .toggle i {
+  color: #dd0c0c;
+}
+
+.bota_faq_question {
+  &.open {
+    background-color: rgba(0, 0, 0, 0.03);
+    font-weight: 700;
+    color: #0874d2;
+    border-color: #0874d2;
+    .toggle {
+      transform: rotate(-180deg);
+  }
+  }
+
+  border-top: 1px solid #ddd;
+  display: block;
+  font-size: 18px;
+  padding: 10px 40px;
+  position: relative;
+  transition: color .3s,opacity .3s,transform .3s;
+  cursor: pointer;
+}
+
+.bota_faq_question_answer {
+  display: none;
+  padding: 16px 36px;
+
+  .bota_faq_question_des {
+    ul li {
+      margin-bottom: 9px;
+      margin-left: 20px;
+      list-style: disc;
+    }
+
+    p, ul {
+      margin-bottom: 20px;
+    }
+
+    font-size: 16px;
+  }
+}
+
+.bota_cate_top_box {
+  margin-bottom: 30px;
+}
+.bota_qaa_other {
+  padding: 30px 0 40px;
+  overflow: hidden;
+
+  .bota_qaa_other_col h2 {
+    font-size: 25px;
+    color: #111;
+    line-height: 1.3;
+    margin-bottom: 13px;
+    font-weight: bold;
+  }
+
+  .lead {
+    font-size: 20px;
+    font-weight: 400;
+    color: #111;
+  }
+
+  a {
+    background-color: #0874d2;
+    border-radius: 999px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 35px;
+    font-weight: bolder;
+    font-size: 14px;
+    border: 2px solid transparent;
+
+    &:hover {
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      opacity: 1;
+      outline: none;
+      border-color: #0874d2;
+    }
+
+    + a {
+      margin-top: 15px;
+      border-color: #0874d2;
+      background: #fff;
+      color: #0874d2;
+
+      &:hover {
+        border-color: #0874d2;
+        background: #0874d2;
+        color: #fff;
+        box-shadow: unset;
+      }
+    }
+  }
+}
+.bota_contact_details h2 {
+  margin-bottom: 11px;
+  border-top: 1px solid #ececec;
+  line-height: 1.3;
+  padding: 0;
+  text-align: left;
+  font-size: 25px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.bota_contact_socail {
+  h4 {
+    border-top: 1px solid #ececec;
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 9px;
+  }
+
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bota_contact_socail_cont a {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.22);
+  transition: transform .3s,box-shadow .3s,background-color .3s,color .3s,opacity .3s;
+  display: inline-block;
+  color: #fff;
+  background-color: #46a502;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  padding: 8px 18px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-width: 153px;
+  font-size: 16px;
+  margin-bottom: 15px;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:after {
+    content: "";
+    height: 100%;
+    left: -25%;
+    position: absolute;
+    top: 0;
+    width: 150%;
+    box-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.1), inset 0 2em 15px 0 hsla(0, 0%, 100%, 0.2);
+  }
+
+  + a {
+    margin-left: 20px;
+  }
+
+  i {
+    margin-right: 6px;
+  }
+
+  &:nth-child(1):after {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    background-color: #0874d2;
+  }
+
+  &:nth-child(3) {
+    background-color: #ca1f1f;
+  }
+}
+.bota_contact_socail_list a {
+  display: inline-block;
+  margin-left: 0.12em;
+  margin-right: 0.12em;
+  width: 33px;
+  margin-bottom: 13px;
+  border-radius: 100%;
+  color: #fff;
+  background-color: #3a589d;
+  height: 33px;
+  line-height: 35px;
+  border: 1px solid transparent;
+
+  &:hover {
+    box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    opacity: 1;
+    outline: none;
+  }
+}
+.bota_contact_socail_list a {
+  &:nth-child(3), &:nth-child(4) {
+    display: none;
+  }
+
+  &.instagram {
+    background: #3b6994;
+  }
+
+  &.envelop {
+    background: #111;
+  }
+
+  &.phone {
+    background: #51cb5a;
+  }
+
+  &.pinterest {
+    background: #cb2320;
+  }
+
+  &.linkedin {
+    background: #0072b7;
+  }
+
+  &.youtube {
+    background: #c33223;
+  }
+
+  &.flickr {
+    background: #e5086f;
+  }
+  &.telegram  {
+   display: none;
+  }
+}
+
+.bota_contact_details_page .bota_section_title_center span{
+  padding:10px 0
+}
+embed, iframe, object {
+  max-width: 100%;
+}

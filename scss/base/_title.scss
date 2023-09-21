@@ -1,0 +1,33 @@
+.bota_title_home {
+  text-align: center;
+    margin-bottom: 35px;
+  h2 {
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+.bota_heading_holder {
+  margin-bottom: 60px;
+  position: relative;
+
+  .bota_heading_subtitle {
+    font-family: "Work Sans", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    line-height: 32px;
+    display: block;
+  }
+
+  .bota_heading_title {
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

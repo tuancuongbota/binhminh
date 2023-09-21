@@ -1,0 +1,34 @@
+.v2_bnc_album_home_main {
+	margin-top: 90px;
+	margin-bottom: 0;
+	position: relative;
+	.v2_bnc_album_item {
+		position: relative;
+
+		.v2_bnc_album_item_img {
+			height: 267px;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+#album_filter {
+    position: relative;
+    margin-bottom: 30px;
+    .btn {
+    	background-color: $color-primary;
+    	border-color: $color-primary;
+    }
+    input,select{
+    	&:focus{
+    		border-color:$color-primary !important;
+    	}
+    }
+}

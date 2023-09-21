@@ -1,0 +1,169 @@
+/*== Footer==*/
+.bota_footer {
+	background-color: #283142;
+	&_top{
+		padding: 80px 0 78px;
+		.col-xl-3 {
+			@media (min-width: 1200px){
+				max-width: 20%;
+				flex: 0 0 20%;
+			}
+		  
+			&:last-child {
+				@media (min-width: 1200px){
+					max-width: 40%;
+					flex: 0 0 40%;
+				}
+			}
+		  }		  
+	}
+	&_content {
+		color: #fff;
+	}
+	h4 {
+		font-size: 14px;
+		color: #fff;
+		font-weight: 800;
+		text-transform: uppercase;
+		margin: 0 0 17px;
+	}
+	&_links > li {
+		&:not(:last-child) {
+		  padding-bottom: calc(5px/2);
+		}
+	  
+		> a {
+			font-size: 13px;
+			color: #aaa;
+			text-transform: capitalize;
+			display: block;
+			padding: 6px 0;
+	  
+		  &:hover {
+			color: #2b97a3;
+		  }
+		}
+	  }
+	  .copyright {
+	    font-size: 12px;
+		line-height: 26px;
+		margin: 0;
+		color: #aaa;
+		text-align: left !important;
+		a {
+		  color: #fff;
+		}
+	  }
+	  .bota_footer_bottom {
+		.container {
+		  padding: 23px 15px;
+		  border-top: 1px solid #3d4655;
+		}
+	  
+		.row {
+		  align-items: center;
+		}
+	  
+		.bota_payment {
+		  text-align: right;
+		}
+	  }
+	  
+	  .bota_block_email_home {
+		.bota_block_email_home_desc {
+		  margin: 22px 0 10px;
+		  display: block;
+		  color: #aaa;
+		}
+	  
+		.bota_form_group {
+		  input {
+			background-color: #fff;
+			color: #999;
+			border: 0;
+			border-radius: 0;
+			float: left;
+			margin-right: 10px;
+			min-width: 340px;
+			padding: 0 20px;
+			height: 46px;
+		  }
+	  
+		  button {
+			padding: 0 25px;
+			text-transform: uppercase;
+			font-size: 16px;
+			color: #fff;
+			font-weight: 700;
+			border-radius: 0;
+			border: 0;
+			background-color: #2b97a3;
+			height: 46px;
+			white-space: nowrap;
+	  
+			&:hover {
+			  background-color: #26848f;
+			}
+		  }
+		  flex-wrap: wrap;
+		  display: flex;
+		}
+	  
+		margin-bottom: 40px;
+	  }
+	  
+	  .bota_socail ul {
+		display: flex;
+	  
+		li {
+		  a {
+			border-radius: 20px 20px 20px 20px;
+			font-size: 15px;
+			width: 40px;
+			height: 40px;
+			background: #fff;
+			display: block;
+			text-align: center;
+			line-height: 40px;
+	  
+			&:hover {
+			  background: #2B97A4;
+			  color: #fff;
+			}
+		  }
+	  
+		  + li {
+			margin-left: 14px;
+		  }
+		}
+	  }
+		  
+}
+.bota_top_button {
+	position: fixed;
+	display: none;
+	text-decoration: none;
+	bottom: 20px;
+	left: 20px;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-align: center;
+    line-height: 40px;
+	z-index: 9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  
+	&.show {
+	  display: inline;
+	  background: #000;
+	}
+  
+	i {
+	  color: #fff;
+	}
+  }
+.hide {
+	display: none;
+}
+/*== End Footer==*/

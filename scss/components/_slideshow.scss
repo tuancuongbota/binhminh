@@ -1,0 +1,28 @@
+/*== Slideshow ==*/
+.slideshow_main {
+  .swiper-button-next, .swiper-button-prev {
+    color: #f7ca37;
+    width: 35px;
+    height: 35px;
+  }
+
+  .swiper-button-next:after {
+    font-size: 25px;
+    opacity: 0.7;
+  }
+
+  .swiper-button-prev {
+    &:after {
+      font-size: 25px;
+      opacity: 0.7;
+    }
+
+    left: 2%;
+  }
+
+  .swiper-button-next {
+    right: 2%;
+  }
+}
+
+/*== End Slideshow ==*/
