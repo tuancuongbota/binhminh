@@ -11,179 +11,297 @@
     <script type="text/javascript" src="statics/scripts/js_custom.js"></script>
     <body>
         <div class="main_page">
-        <header class="bota_header">
-            <div class="bota_header_top">
-               <div class="container">
-                  <div class="row align-items-center">
-                     <div class="col-xl-6 col-lg-6 col-sm-6">
-                        <div class="bota_header_left">
-                           <ul>
-                              <li>
-                                 <iconify-icon icon="basil:phone-in-outline" style="color: #ff9800;" width="15" height="15"></iconify-icon>
-                                 <a href="tel:0981.495.038">
-                                 0981.495.038                                
-                                </a>
-                              </li>
-                              <li>
-                                 <iconify-icon icon="clarity:email-line" style="color: #ff9800;" width="15" height="15"></iconify-icon>
-                                 <a href="mailto:contact@intechgroup.vn">
-                                 contact@intechgroup.vn                                
-                                </a>
-                              </li>
-                           </ul>
+            <header class="bota_header">
+                <div class="bota_header_top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="bota_header_left">
+                            <ul>
+                                <li>
+                                    <iconify-icon icon="basil:phone-in-outline" style="color: #ff9800;" width="15" height="15"></iconify-icon>
+                                    <a href="tel:0981.495.038">
+                                    0981.495.038                                
+                                    </a>
+                                </li>
+                                <li>
+                                    <iconify-icon icon="clarity:email-line" style="color: #ff9800;" width="15" height="15"></iconify-icon>
+                                    <a href="mailto:contact@intechgroup.vn">
+                                    contact@intechgroup.vn                                
+                                    </a>
+                                </li>
+                            </ul>
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-6 col-sm-6">
-                        <div class="bota_header_right">
-                           <!-- Search -->
-                           <div class="bota_search">
-                              <div id="search-box" class="bota_search_main">
-                                 <div class="search search-area">
-                                    <div class="bota_search_border">
-                                       <input type="search" class="search-field" placeholder="Tìm kiếm..." name="BNC_txt_search" id="BNC_txt_search" value="">
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="bota_header_right">
+                            <!-- Search -->
+                            <div class="bota_search">
+                                <div id="search-box" class="bota_search_main">
+                                    <div class="search search-area">
+                                        <div class="bota_search_border">
+                                        <input type="search" class="search-field" placeholder="Tìm kiếm..." name="BNC_txt_search" id="BNC_txt_search" value="">
+                                        </div>
+                                        <div class="BNC_btn_search_icon" id="BNC_btn_search">
+                                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon-search" aria-hidden="true" focusable="false" role="presentation" width="22.468" height="22.4">
+                                            <defs>
+                                                <symbol id="icon-search" viewBox="0 0 22.468 22.4">
+                                                    <path id="search" d="M21.7,20.405l-5.464-5.464a9.169,9.169,0,1,0-1.294,1.294L20.405,21.7A.915.915,0,1,0,21.7,20.405ZM9.152,16.475a7.324,7.324,0,1,1,7.324-7.324A7.324,7.324,0,0,1,9.152,16.475Z" transform="translate(0.232 0.232)" stroke-width="0.4px"></path>
+                                                </symbol>
+                                            </defs>
+                                            <use href="#icon-search"></use>
+                                        </svg>
+                                        </div>
                                     </div>
-                                    <div class="BNC_btn_search_icon" id="BNC_btn_search">
-                                       <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="icon-search" aria-hidden="true" focusable="false" role="presentation" width="22.468" height="22.4">
-                                          <defs>
-                                             <symbol id="icon-search" viewBox="0 0 22.468 22.4">
-                                                <path id="search" d="M21.7,20.405l-5.464-5.464a9.169,9.169,0,1,0-1.294,1.294L20.405,21.7A.915.915,0,1,0,21.7,20.405ZM9.152,16.475a7.324,7.324,0,1,1,7.324-7.324A7.324,7.324,0,0,1,9.152,16.475Z" transform="translate(0.232 0.232)" stroke-width="0.4px"></path>
-                                             </symbol>
-                                          </defs>
-                                          <use href="#icon-search"></use>
-                                       </svg>
+                                </div>
+                            </div>
+                            <!-- End Search -->
+                            <div class="bota_header_social_icons">
+                                <ul>
+                                    <li>
+                                        <a href="https://twitter.com/" title="Twitter">
+                                        <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/" title="Facebook">
+                                        <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" title="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://youtube.com/" title="Youtube">
+                                        <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://google.com/" title="google-plus">
+                                        <i class="fab fa-google-plus-g"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="bota_header_center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-12 col-sm-12">
+                            <div class="bota_header_logo">
+                            <a href="index.html" rel="nofollow" class="bota_logo" title="logo">
+                                    <img src="statics/imgs/logo.png" width="252" height="54" class="img-fluid" alt="logo" />
+                            </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-12 col-sm-12">
+                            <div class="bota_header_center_right">
+                            <div class="bota_header_menu">
+                                <div class="v2_menu_top">
+                                    <ul class="v2_menu_top_ul nxtActiveMenu">
+                                        <li  class="active">
+                                        <a class="v2_menu_first_link" href="/">
+                                        Trang chủ</a> 
+                                        </li>
+                                        <li  class="">
+                                        <a class="v2_menu_first_link" href="info.html">
+                                        Giới thiệu</a> 
+                                        </li>
+                                        <li  class="">
+                                        <a class="v2_menu_first_link" href="product.html">
+                                        Sản phẩm</a> 
+                                        </li>
+                                        <li  class="">
+                                        <a class="v2_menu_first_link" href="news.html">
+                                        Tin tức</a> 
+                                        </li>
+                                        <li  class="">
+                                        <a class="v2_menu_first_link" href="tuyen-dung.html">
+                                        Tuyển dụng</a> 
+                                        </li>
+                                        <li  class="">
+                                        <a class="v2_menu_first_link" href="contact.html">
+                                        Liên hệ</a> 
+                                        </li>
+                                    </ul>
+                                </div>                       
+                            </div>
+                            <!-- Language -->
+                            <div class="bota_header_language">
+                                <ul>
+                                    <li><a href="javascript:;" data-lang="vi" class="flag_language"><img src="statics/imgs/vi.png" alt="Việt nam" width="30px" height="30px" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" data-lang="jp" class="flag_language"><img src="statics/imgs/jp.png" alt="Japan" width="30px" height="30px" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" data-lang="en" class="flag_language"><img src="statics/imgs/en.png" alt="english" width="30px" height="30px" class="img-fluid"></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" data-lang="kr" class="flag_language"><img src="statics/imgs/kr.png" alt="Korea" width="30px" height="30px" class="img-fluid"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Language -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </header>
+            <div class="slideshow_main">
+                <div class="home-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slidehow_main">
+                            <a href="index.html" title="banner">
+                                <img src="statics/imgs/banner-1.png" alt="banner" class="img-fluid img_cover"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slidehow_main">
+                            <a href="index.html" title="banner">
+                                <img src="statics/imgs/banner-2.png" alt="banner" class="img-fluid img_cover"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slidehow_main">
+                            <a href="index.html" title="banner">
+                                <img src="statics/imgs/banner-3.png" alt="banner" class="img-fluid img_cover"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="bota_block_info">
+                <div class="bota_bg_overlay"></div>
+                <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-6 col-sm-6 animated ova-move-left">
+                        <div class="bota_block_info_img">
+                            <img src="statics/imgs/info.png" class="img-fluid" alt="Giới thiệu" />
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-sm-6 animated ova-move-down">
+                        <div class="bota_block_info_top">
+                            <div class="bota_block_info_title">
+                                <h2><span>Giới thiệu</span></h2>
+                            </div>
+                            <div class="bota_block_info_short">
+                                Công ty BÌNH MINH được thành lập năm 2008 với những kỹ sư có nhiều kinh nghiệm trong lĩnh vực cơ khí chính xác. Các sản phẩm chính bao gồm: Khuôn mẫu, đồ gá và các chi tiết máy có độ chính xác cao. 20% các sản phẩm được xuất khẩu sang Nhật Bản, 80% còn lại được cung cấp cho các công ty của Nhật Bản tại Việt nam. Các sản phẩm được sản xuất trên các máy móc hiện đại và chính xác được nhập khẩu từ Nhật Bản, của các hãng Makino, Mori Seiki, Sodick. Vì vậy chúng tôi sẽ đáp ứng được các yêu cầu khắt khe từ phía khách hàng.
+                            </div>
+                            <div class="bota_reamore_btn">
+                                <a href="#" title="Đọc thêm">
+                                    <span>Đọc thêm</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bota_block_info_center">
+                            <h3>CHÍNH SÁCH CHẤT LƯỢNG</h3>
+                            <div class="bota_block_info_item">
+                                <div class="bota_block_info_icon">
+                                    <img src="statics/imgs/planet-earth.jpg" alt="" />
+                                </div>
+                                <div class="bota_block_info_text">
+                                    Với tư cách là Tổng giám đốc Công ty, nhận thức được tầm quan trọng về các vấn đề chất lượng, tôi cam kết phổ biến rộng rãi tới toàn thể nhân viên về tầm quan trọng của việc đáp ứng các yêu cầu của khách hàng.
+                                </div>
+                            </div>
+                            <div class="bota_reamore_btn">
+                                <a href="#" title="Đọc thêm">
+                                    <span>Đọc thêm</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bota_block_info_center">
+                            <h3>CHÍNH SÁCH MÔI TRƯỜNG</h3>
+                            <div class="bota_block_info_item">
+                                <div class="bota_block_info_icon">
+                                    <img src="statics/imgs/quality.jpg" alt="" />
+                                </div>
+                                <div class="bota_block_info_text">
+                                    Về trách nhiệm đối với vấn đề bảo vệ môi trường, chúng tôi sẽ cố gắng đóng góp sức lực nhỏ bé thông qua tất cả các hoạt động bảo vệ môi trường thiết thực và liên tục nhằm giảm thiểu tác động môi trường do hoạt động của công ty.
+                                </div>
+                            </div>
+                            <div class="bota_reamore_btn">
+                                <a href="#" title="Đọc thêm">
+                                    <span>Đọc thêm</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="bota_factory">
+                <div class="bota_factory_bg_overlay" style="background-image: url(statics/imgs/mechanical.png);"></div>
+                <div class="container">
+                    <div class="bota_factory_title">
+                        <h2><span>Nhà máy bình minh</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-sm-4 col-12 animated-fast animated ova-move-up">
+                            <div class="bota_factory_item">
+                                <div class="ova-counter">
+                                    <div class="icon">
+                                        <img src="statics/imgs/factory1.png" alt="Phân xưởng" width="62" height="62">	
+                                        <i aria-hidden="true" class="icon-settings flaticon flaticon-settings"></i>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- End Search -->
-                           <div class="bota_header_social_icons">
-                              <ul>
-                                 <li>
-                                    <a href="https://twitter.com/" title="Twitter">
-                                    <i class="fab fa-twitter"></i>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a href="https://www.facebook.com/" title="Facebook">
-                                    <i class="fab fa-facebook"></i>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a href="https://www.instagram.com/" title="Instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a href="https://youtube.com/" title="Youtube">
-                                    <i class="fab fa-youtube"></i>
-                                    </a>
-                                 </li>
-                                 <li>
-                                    <a href="https://google.com/" title="google-plus">
-                                    <i class="fab fa-google-plus-g"></i>
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
+                                    <div class="odometer-wrapper">
+                                        <span class="odometer" data-count="176">0</span><span class="suffix">+</span>
+                                        <h4 class="title">
+                                            Phân xưởng							
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="bota_header_center">
-               <div class="container">
-                  <div class="row align-items-center">
-                     <div class="col-xl-3 col-lg-12 col-sm-12">
-                        <div class="bota_header_logo">
-                           <a href="index.html" rel="nofollow" class="bota_logo" title="logo">
-                                <img src="statics/imgs/logo.png" width="252" height="54" class="img-fluid" alt="logo" />
-                           </a>
+                        <div class="col-xl-4 col-lg-4 col-sm-4 col-12 animated-fast animated ova-move-up">
+                            <div class="bota_factory_item">
+                                <div class="ova-counter">
+                                    <div class="icon">
+                                        <img src="statics/imgs/office1.png" alt="Máy móc" width="62" height="62">	
+                                        <i aria-hidden="true" class="icon-settings flaticon flaticon-settings"></i>
+                                    </div>
+                                    <div class="odometer-wrapper">
+                                        <span class="odometer" data-count="800">0</span><span class="suffix">+</span>
+                                        <h4 class="title">
+                                            Máy móc					
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-xl-9 col-lg-12 col-sm-12">
-                        <div class="bota_header_center_right">
-                           <div class="bota_header_menu">
-                              <div class="v2_menu_top">
-                                 <ul class="v2_menu_top_ul nxtActiveMenu">
-                                    <li  class="active">
-                                       <a class="v2_menu_first_link" href="/">
-                                       Trang chủ</a> 
-                                    </li>
-                                    <li  class="">
-                                       <a class="v2_menu_first_link" href="info.html">
-                                       Giới thiệu</a> 
-                                    </li>
-                                    <li  class="">
-                                       <a class="v2_menu_first_link" href="product.html">
-                                       Sản phẩm</a> 
-                                    </li>
-                                    <li  class="">
-                                       <a class="v2_menu_first_link" href="news.html">
-                                       Tin tức</a> 
-                                    </li>
-                                    <li  class="">
-                                       <a class="v2_menu_first_link" href="tuyen-dung.html">
-                                       Tuyển dụng</a> 
-                                    </li>
-                                    <li  class="">
-                                       <a class="v2_menu_first_link" href="contact.html">
-                                       Liên hệ</a> 
-                                    </li>
-                                 </ul>
-                              </div>                       
-                           </div>
-                           <!-- Language -->
-                           <div class="bota_header_language">
-                              <ul>
-                                 <li><a href="javascript:;" data-lang="vi" class="flag_language"><img src="statics/imgs/vi.png" alt="Việt nam" width="30px" height="30px" class="img-fluid"></a>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:;" data-lang="jp" class="flag_language"><img src="statics/imgs/jp.png" alt="Japan" width="30px" height="30px" class="img-fluid"></a>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:;" data-lang="en" class="flag_language"><img src="statics/imgs/en.png" alt="english" width="30px" height="30px" class="img-fluid"></a>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:;" data-lang="kr" class="flag_language"><img src="statics/imgs/kr.png" alt="Korea" width="30px" height="30px" class="img-fluid"></a>
-                                 </li>
-                              </ul>
-                           </div>
-                           <!-- End Language -->
+                        <div class="col-xl-4 col-lg-4 col-sm-4 col-12 animated-fast animated ova-move-up">
+                            <div class="bota_factory_item">
+                                <div class="ova-counter">
+                                    <div class="icon">
+                                        <img src="statics/imgs/workers1.png" alt="Nhân lực" width="62" height="62">		
+                                        <i aria-hidden="true" class="icon-settings flaticon flaticon-settings"></i>
+                                    </div>
+                                    <div class="odometer-wrapper">
+                                        <span class="odometer" data-count="230">0</span><span class="suffix">+</span>
+                                        <h4 class="title">
+                                           Nhân lực					
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </header>
-         <div class="slideshow_main">
-            <div class="home-slider swiper-container">
-               <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                     <div class="slidehow_main">
-                        <a href="index.html" title="banner">
-                            <img src="statics/imgs/banner-1.png" alt="banner" class="img-fluid"/>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="slidehow_main">
-                        <a href="index.html" title="banner">
-                            <img src="statics/imgs/banner-2.png" alt="banner" class="img-fluid"/>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="swiper-slide">
-                     <div class="slidehow_main">
-                        <a href="index.html" title="banner">
-                            <img src="statics/imgs/banner-3.png" alt="banner" class="img-fluid"/>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="swiper-button-prev"></div>
-               <div class="swiper-button-next"></div>
-            </div>
-         </div>
+            
         </div>
     </body>
 </html>
