@@ -369,9 +369,11 @@ $numbersPX:
     max-width: 60%;
   }
 }
-
-@media (min-width: 1200px){
-	.container {
-   max-width: 1320px;
- }
+.container{
+  @media (min-width: 992px){
+    max-width: 100%;
+  }
+  @media (min-width: 1200px){
+    max-width: 1200px;
+  }
 }

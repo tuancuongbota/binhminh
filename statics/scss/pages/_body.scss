@@ -36,7 +36,12 @@ button,input,select {
 	  line-height: 1.21;
 	  color: #1b1eab;
 	  text-transform: capitalize;
-
+	  @media (max-width: 767px){
+		font-size: 30px;
+	  }
+	  @media (max-width: 320px){
+		font-size: 25px;
+	  }
 	  span {
 		position: relative;
 		padding-bottom: 5px;
@@ -89,6 +94,9 @@ button,input,select {
 		flex-wrap: wrap;
 		align-content: flex-start;
 		display: flex;
+		@media (max-width: 1024px){
+			padding: 0px 0px 50px 75px;
+		  }
 		&:hover {
 			.icon{
 				&:before {

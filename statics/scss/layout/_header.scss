@@ -95,6 +95,7 @@
 		@media all and (max-width: 1024px) {
 			margin: auto;
 			display: block;
+			width: 140px;
 		}
 	}
 }
@@ -153,48 +154,67 @@
 	  }
 	}
   }
-  
+  .bota_header_search_mb{
+		color: #fff;
+		background-color: #f00401;
+	  width: 40px;
+	  height: 35px;
+	  border: 0;
+	  padding: 5px 10px;
+	  -webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	  -o-border-radius: 3px;
+	  -ms-border-radius: 3px;
+	  border-radius: 3px;
+	  outline: 0;
+	  position: absolute;
+	  right: 0;
+	  top: 50%;
+	  z-index: 20;
+	  text-align: center;
+	  transform: translateY(-50%);
+  }
 .bota_search {
 	display: flex;
     position: relative;
-  input {
-    height: 30px;
-    border: 1px solid #fec83f;
-    padding: 0 15px;
-    border-radius: 10px;
-    background: transparent;
-    color: #fff;
-    padding-right: 35px;
+	input {
+		height: 30px;
+		border: 1px solid #fec83f;
+		padding: 0 15px;
+		border-radius: 10px;
+		background: transparent;
+		color: #fff;
+		padding-right: 45px;
 
-    &::-webkit-input-placeholder {
-      color: #ccc;
-    }
-  }
+		&::-webkit-input-placeholder {
+		color: #ccc;
+		}
+	}
 
-  #BNC_btn_search {
-    top: 0;
-    position: absolute;
-    right: 0px;
-    width: 30px;
-    height: 30px;
-    background: #fec83f;
-    border: 0;
-    text-align: center;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    cursor: pointer;
-    svg {
-      width: 15px;
-      height: 15px;
-      fill: #fff;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-  }
+	#BNC_btn_search {
+		top: 0;
+		position: absolute;
+		right: 0px;
+		width: 30px;
+		height: 30px;
+		background: #fec83f;
+		border: 0;
+		text-align: center;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		cursor: pointer;
+		i {
+		width: 15px;
+		height: 15px;
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+		margin: auto;
+		}
+  	}
 }
 &_social_icons {
   margin-left: 15px;

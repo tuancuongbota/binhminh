@@ -171,6 +171,11 @@ fxheader();
        });
     })
  }
+    if ($(".bota_header_search_mb").length) {
+        $('.bota_header_search_mb').on('click', function(){
+            $('.bota_search').toggleClass('active');
+        });
+    }
 });
 function fxheader() {
     $(window).on('scroll', function () {
