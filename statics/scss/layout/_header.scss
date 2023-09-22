@@ -90,6 +90,7 @@
 }
 &_logo {
     padding: 15px 0;
+	position: relative;
 	img{
 		@media all and (max-width: 1024px) {
 			margin: auto;
@@ -97,6 +98,7 @@
 		}
 	}
 }
+
 &_language {
   ul {
     display: flex;
@@ -124,7 +126,34 @@
 
   width: 70px;
 }
-
+.bota_menu_mobile .menu_hamburger {
+	> a {
+	  color: #fff;
+	  background-color: #f00401;
+	width: 40px;
+	height: 35px;
+	border: 0;
+	padding: 5px 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+	outline: 0;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 20;
+	text-align: center;
+	transform: translateY(-50%);
+  
+	  i {
+		line-height: 25px;
+		font-size: 20px;
+	  }
+	}
+  }
+  
 .bota_search {
 	display: flex;
     position: relative;

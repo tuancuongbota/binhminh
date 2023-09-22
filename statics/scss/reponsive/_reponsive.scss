@@ -22,7 +22,38 @@ $portrait-mobile:"(max-width: 320px)";
 			justify-content: center;
 		  }
 	}
-	  
+	.bota_logo_menu.mm-listitem {
+	    background: #fff;
+	    text-align: center;
+	    padding: 10px 0;
+	}
+	#mm-1 .mm-navbar {
+	    display: none;
+	}
+	#mm-1 {
+	    padding-top:0;
+	}
+	.mm-listitem:after {
+	    left:0;
+	}
+	.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>* {
+	    color: #fff;
+	    font-size: 16px !important;
+	    text-transform: uppercase;
+		font-weight: 700;
+	}
+	.mm-listitem>a, .mm-listitem>span {
+	    font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.mm-menu_theme-dark .mm-listview .mm-btn_next:after,.mm-menu_theme-dark .mm-btn:after, .mm-menu_theme-dark .mm-btn:before,
+	.mm-navbar,.mm-listitem .mm-btn_next:before,.mm-listitem:after  {
+	    border-color: #fff;
+	}
+	.mm-menu_theme-dark {
+	    background: #f00401;
+	}
 }
 @media only screen and #{$portrait-tablets}{
 

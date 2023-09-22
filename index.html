@@ -11,7 +11,18 @@
     <script type="text/javascript" src="statics/plugins/swiper-4.5.0/dist/js/swiper.min.js"></script>
     <script type="text/javascript" src="statics/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="statics/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="statics/plugins/mmenu/jquery.mmenu.all.js"></script>
     <script type="text/javascript" src="statics/scripts/js_custom.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu").mmenu({
+               "extensions": [
+                  "pagedim-black",
+                  "theme-dark"
+               ]
+            });
+        });
+    </script>
     <body>
         <div class="main_page">
             <header class="bota_header">
@@ -98,9 +109,16 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-12 col-sm-12">
                             <div class="bota_header_logo">
-                            <a href="index.html" rel="nofollow" class="bota_logo" title="logo">
+                                <div class="bota_menu_mobile d-xl-none d-lg-none">
+                                    <div class="menu_hamburger">
+                                        <a href="#menu" title="menu">
+                                            <i class="fas fa-bars"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a href="index.html" rel="nofollow" class="bota_logo" title="logo">
                                     <img src="statics/imgs/logo.png" width="252" height="54" class="img-fluid" alt="logo" />
-                            </a>
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-12 col-sm-12 d-none d-lg-none d-xl-block">
@@ -109,12 +127,12 @@
                                 <div class="v2_menu_top">
                                     <ul class="v2_menu_top_ul nxtActiveMenu">
                                         <li class="active">
-                                            <a class="v2_menu_first_link" href="/">
+                                            <a href="/" title="Trang chủ">
                                                 Trang chủ
                                             </a> 
                                         </li>
                                         <li>
-                                            <a class="v2_menu_first_link" href="info.html">
+                                            <a href="info.html" title="Giới thiệu">
                                              Giới thiệu<i class="fas fa-caret-down"></i>
                                             </a>
                                             <ul class="bota_sub_menu">
@@ -126,7 +144,7 @@
                                              </ul> 
                                         </li>
                                         <li>
-                                            <a class="v2_menu_first_link" href="product.html">
+                                            <a href="product.html" title="Sản phẩm">
                                                 Sản phẩm<i class="fas fa-caret-down"></i>
                                             </a> 
                                             <ul class="bota_sub_menu">
@@ -157,17 +175,17 @@
                                              </ul>
                                         </li>
                                         <li>
-                                            <a class="v2_menu_first_link" href="news.html">
+                                            <a href="news.html" title="Tin tức">
                                                 Tin tức
                                             </a> 
                                         </li>
                                         <li>
-                                            <a class="v2_menu_first_link" href="tuyen-dung.html">
+                                            <a href="tuyen-dung.html" title="Tuyển dụng">
                                                 Tuyển dụng
                                             </a> 
                                         </li>
                                         <li>
-                                            <a class="v2_menu_first_link" href="contact.html">
+                                            <a href="contact.html" title="Liên hệ">
                                                 Liên hệ
                                             </a> 
                                         </li>
@@ -917,5 +935,75 @@
             </footer>
             <a href="#" class="back-to-top"><i class="fas fa-angle-up"></i></a>
         </div>
+        <nav id="menu" aria-hidden="true">
+            <ul>
+                <li class="bota_logo_menu">
+                    <img src="statics/imgs/logo.png" width="120px" height="auto" class="img-fluid" alt="logo" />
+                </li>
+                <li>
+                    <a href="/" title="Trang chủ">
+                        Trang chủ
+                    </a> 
+                </li>
+                <li>
+                    <a href="info.html" title=" Giới thiệu">
+                        Giới thiệu
+                    </a>
+                    <ul class="bota_sub_menu">
+                        <li><a href="info-detail.html" title="Giới thiệu chung">Giới thiệu chung</a></li>
+                        <li><a href="info-detail.html" title="Lịch sử hình thành">Lịch sử hình thành</a></li>
+                        <li><a href="info-detail.html" title="Máy móc thiết bị">Máy móc thiết bị</a></li>
+                        <li><a href="info-detail.html" title="Chính sách chất lượng">Chính sách chất lượng</a></li>
+                        <li><a href="info-detail.html" title="Chính sách môi trường">Chính sách môi trường</a></li>
+                    </ul> 
+                </li>
+                <li>
+                    <a href="product.html" title="Sản phẩm">
+                        Sản phẩm
+                    </a> 
+                    <ul class="bota_sub_menu">
+                        <li>
+                            <a href="product.html" title="Đồ gá">Đồ gá</a>
+                            <ul class="bota_sub_sub_menu">
+                                <li><a href="product.html" title="Đồ gá lắp ráp">Đồ gá lắp ráp</a></li>
+                                <li><a href="product.html" title="Đồ gá Kiểm tra">Đồ gá Kiểm tra</a></li>
+                                <li><a href="product.html" title="Đồ gá gia công">Đồ gá gia công</a></li>
+                                <li><a href="product.html" title="Đồ gá Hàn">Đồ gá Hàn</a></li>
+                                <li><a href="product.html" title="Đồ gá khác">Đồ gá khác</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html" title="">Khuôn mẫu</a>
+                            <ul class="bota_sub_sub_menu">
+                                <li><a href="product.html" title="Khuôn ép nhựa">Khuôn ép nhựa</a></li>
+                                <li><a href="product.html" title="Khuôn đúc nhôm">Khuôn đúc nhôm</a></li>
+                                <li><a href="product.html" title="Khuôn đột dập">Khuôn đột dập</a></li>
+                                <li><a href="product.html" title="Chi tiết khuôn">Chi tiết khuôn</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="product.html" title="Chi tiết máy">
+                                <span>Chi tiết máy</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="news.html" title="Tin tức">
+                        Tin tức
+                    </a> 
+                </li>
+                <li>
+                    <a href="tuyen-dung.html" title="Tuyển dụng">
+                        Tuyển dụng
+                    </a> 
+                </li>
+                <li>
+                    <a href="contact.html" title="Liên hệ">
+                        Liên hệ
+                    </a> 
+                </li>
+            </ul>
+        </nav>
     </body>
 </html>
