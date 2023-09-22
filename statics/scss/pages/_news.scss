@@ -234,11 +234,20 @@
     }
 
 }
-&:hover .bota_news_content:after {
-  transition: all 0.7s ease;
-  -moz-transition: all 0.7s ease;
-  -webkit-transition: all 0.7s ease;
-  -o-transition: all 0.7s ease;
-  width: calc(100% - 20px);
+&:hover {
+    .bota_news_content:after {
+      transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -webkit-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+      width: calc(100% - 20px);
+    }
+    .bota_news_media a img {
+      transition: all 0.7s ease;
+      -moz-transition: all 0.7s ease;
+      -webkit-transition: all 0.7s ease;
+      -o-transition: all 0.7s ease;
+      transform: scale(1.12);
+  }
 }
 }
