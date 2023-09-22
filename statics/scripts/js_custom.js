@@ -1,22 +1,67 @@
 $(document).ready(function(){
     if ($(".home-slider").length) {
-     var swiper = new Swiper('.home-slider', {
-         autoplay: {
-             delay: 3000,
-             disableOnInteraction: false,
-         },
-         loop: true,
-         speed: 1000,
-         pagination: {
-             el: '.home-slider .swiper-pagination',
-             clickable: true,
-         },
-         navigation: {
-             nextEl: '.home-slider .swiper-button-next',
-             prevEl: '.home-slider .swiper-button-prev',
-         },
-     });
- }
+        var swiper = new Swiper('.home-slider', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            speed: 1000,
+            pagination: {
+                el: '.home-slider .swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.home-slider .swiper-button-next',
+                prevEl: '.home-slider .swiper-button-prev',
+            },
+        });
+   }
+   if ($(".logo-slider").length) {
+    var swiperlogo = new Swiper('.logo-slider', {
+        slidesPerView: 5,
+        grabCursor: true,
+        roundLengths: true,
+        slideToClickedSlide: false,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        speed: 1000,
+        pagination: false,
+        navigation: {
+            nextEl: '.logo-slider .swiper-button-next',
+            prevEl: '.logo-slider .swiper-button-prev',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 20
+            }
+        }
+    });
+}
  if ($(".bota_factory").length) {
  $(window).scroll(function() {
     var scroll_top =  $(window).scrollTop(),
