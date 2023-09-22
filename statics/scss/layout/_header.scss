@@ -90,6 +90,12 @@
 }
 &_logo {
     padding: 15px 0;
+	img{
+		@media all and (max-width: 1024px) {
+			margin: auto;
+			display: block;
+		}
+	}
 }
 &_language {
   ul {
@@ -120,7 +126,7 @@
 }
 
 .bota_search {
-	  display: flex;
+	display: flex;
     position: relative;
   input {
     height: 30px;
@@ -163,7 +169,7 @@
 }
 &_social_icons {
   margin-left: 15px;
-
+ 
   ul li {
     a:before {
       display: none;
