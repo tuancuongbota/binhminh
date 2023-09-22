@@ -1,54 +1,44 @@
 /*== Header ==*/
-#sticky-wrapper {
-    z-index: 999;
-}
-.sticky-wrapper.is-sticky .bota_header_center {
-	animation: 0.9s ease 0s normal both 1 running fixedAnim;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    background: rgba(255, 255, 255, 0.95);
-  }
-  
-  @-moz-keyframes fixedAnim {
-	0% {
-	  top: -100%;
-	}
-  
-	100% {
-	  top: 0;
-	}
-  }
-  
-  @keyframes fixedAnim {
-	0% {
-	  top: -100%;
-	}
-  
-	100% {
-	  top: 0;
-	}
-  }
-  
-.bota_layout.active {
-	#sticky-wrapper{
-		display: none;
-	}
-	.bota_header{
-		&_center {
-			display: none;
-		}
-		.search-modal {
-			display: flex;
-			opacity: 1;
-			animation: animateMenuOpen .2s ease;
-			padding: 30px 0;
-		}
-	}
-}
 .bota_header{
 	position: relative;
+	transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	&.fixed-header {
+		z-index: 999;
+		opacity: 1;
+		visibility: visible;
+		-ms-animation-name: smoothScroll;
+		-moz-animation-name: smoothScroll;
+		-op-animation-name: smoothScroll;
+		-webkit-animation-name: smoothScroll;
+		animation-name: smoothScroll;
+		-ms-animation-duration: 500ms;
+		-moz-animation-duration: 500ms;
+		-op-animation-duration: 500ms;
+		-webkit-animation-duration: 500ms;
+		animation-duration: 500ms;
+		-ms-animation-timing-function: linear;
+		-moz-animation-timing-function: linear;
+		-op-animation-timing-function: linear;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+		-ms-animation-iteration-count: 1;
+		-moz-animation-iteration-count: 1;
+		-op-animation-iteration-count: 1;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
+		position: fixed;
+		box-shadow: 0 0 45px rgba(5, 28, 141, 0.1);
+	}
 	&_top {
-  background-color: #30253f;
-  padding: 10px 0;
+		background-color: #30253f;
+		padding: 10px 0;
 
   a {
     &:before {
@@ -116,7 +106,13 @@
         border: 1px solid #ddd;
         height: 20px;
         object-fit: cover;
+		opacity: .2;
       }
+	  &.active{
+		img{
+			opacity: 1;
+		}
+	  }
     }
   }
 
@@ -656,4 +652,25 @@
 	  display: none;
 	}
   }
+  @-webkit-keyframes smoothScroll {
+	0% {
+	   opacity: 0;
+	   -webkit-transform: translateY(-20px);
+	}
+	100% {
+	   opacity: 1;
+	   -webkit-transform: translateY(0);
+	}
+ }
+ 
+ @keyframes smoothScroll {
+	0% {
+	   opacity: 0;
+	   transform: translateY(-20px);
+	}
+	100% {
+	   opacity: 1;
+	   transform: translateY(0);
+	}
+ }
 /*== End Header ==*/

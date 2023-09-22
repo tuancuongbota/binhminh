@@ -91,12 +91,9 @@ $(document).ready(function(){
         });
     });
  }
- function isotopeArrange() {
-    $(".grid-layout > .isotope").find("audio, video").each(function (index) {
-       $(this)[0].play();
-       $(this)[0].pause()
-    })
- }
+backtotop();
+fxheader();
+
  if ($(".grid-layout > .isotope").length) {
     $(".grid-layout > .isotope").each(function () {
        var c_elem = $(this);
@@ -175,3 +172,29 @@ $(document).ready(function(){
     })
  }
 });
+function fxheader() {
+    $(window).on('scroll', function () {
+    var sticky = $('.bota_header'),
+    scroll = $(window).scrollTop();
+    if (scroll >= 300) sticky.addClass('fixed-header');
+    else sticky.removeClass('fixed-header');
+    });
+};
+
+function backtotop() { 
+	$(window).scroll(function() {
+		$(this).scrollTop() > 200 ? $('.back-to-top').addClass('show') : $('.back-to-top').removeClass('show')
+	});
+	$('.back-to-top').click(function() {
+		return $("body,html").animate({
+			scrollTop: 0
+		}, 800), !1
+});
+} window.backtotop=backtotop;
+
+function isotopeArrange() {
+    $(".grid-layout > .isotope").find("audio, video").each(function (index) {
+       $(this)[0].play();
+       $(this)[0].pause()
+    })
+ }

@@ -1,34 +1,28 @@
-.v2_bnc_album_home_main {
-	margin-top: 90px;
-	margin-bottom: 0;
-	position: relative;
-	.v2_bnc_album_item {
-		position: relative;
-
-		.v2_bnc_album_item_img {
-			height: 267px;
-			width: 100%;
-			overflow: hidden;
-			position: relative;
-
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
+.bota_album_list > ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+  
+	> li {
+	  img {
+		transition: all 0.7s ease;
+		-moz-transition: all 0.7s ease;
+		-webkit-transition: all 0.7s ease;
+		-o-transition: all 0.7s ease;
+		height: 65px;
+		object-fit: cover;
+		width: 100%;
+  
+		&:hover {
+		  transform: scale(1.12);
 		}
+	  }
+  
+	  > a {
+		overflow: hidden;
+		position: relative;
+		display: block;
+	  }
 	}
-}
-#album_filter {
-    position: relative;
-    margin-bottom: 30px;
-    .btn {
-    	background-color: $color-primary;
-    	border-color: $color-primary;
-    }
-    input,select{
-    	&:focus{
-    		border-color:$color-primary !important;
-    	}
-    }
-}
+  }
+  
