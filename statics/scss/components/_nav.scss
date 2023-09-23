@@ -77,6 +77,9 @@
    &:hover {
    > a{
     color: #1b1eab;
+    i{
+      color: #fec83f;
+    }
    }
     .bota_sub_menu {
       opacity: 1;
@@ -113,6 +116,9 @@
     
       &:hover > a {
         color: #1b1eab;
+        i{
+          color: #fec83f;
+        }
       }
       .bota_sub_sub_menu {
         border-radius: 0;
