@@ -238,3 +238,193 @@
       }
     }
   }
+  .bota_contact_page{
+    position: relative;
+    .bota_contact_info_item{
+      .bota_contact_info_box {
+        .icon {
+          width: 64px;
+          position: absolute;
+          bottom: 65px;
+          right: 40px;
+       }
+      }
+      .bota_contact_content{
+        border: 1px solid #dfe3ea;
+        border-bottom: unset;
+        padding: 40px;
+        padding-bottom: 59px;
+        padding-right: 48px;
+          padding-top: 35px;
+          padding-left: 48px;
+    
+        .bota_contact_label{
+          font-size: 20px;
+          margin: 0 0px 14px 0px;
+          padding: 0;
+          font-weight: 800;
+          line-height: 1.2em;
+          color: var(--heading);
+        }
+    
+        .bota_contact_info{
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          color: #76787c;
+          a{
+            color: #76787c;
+            -webkit-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+            position: relative;
+  
+            &:before{
+              position: absolute;
+                content: '';
+                width: 0%;
+                height: 1px;
+                left: 0px;
+                bottom: 0px;
+                transition: all 500ms ease;
+                background-color: #fec83f;
+            }
+  
+            &:hover{
+              color: #fec83f;
+              &:before{
+                width: 100%;
+              }
+            }
+          }
+        }
+    
+      }
+    
+      .bota_contact_btn{
+        display: flex;
+        border-right: 1px solid #dfe3ea;
+        position: relative;
+          overflow: hidden;
+        .bota_contact_mask{
+          position: relative;
+          width: 55%;
+          flex: 0 0 55%;
+          border-top: 1px solid #dfe3ea;
+    
+          &:after{
+              content: "";
+              width: 1.2px;
+              height: calc(101%);
+              display: block;
+              position: absolute;
+              z-index: -1;
+              bottom: 0;
+              left: calc(100% + 14px);
+              background: #dfe3ea;
+              transform: skew(30deg);
+            }
+  
+            &:before{
+              content: "";
+              width: 30px;
+              height: calc(100%);
+              display: block;
+              position: absolute;
+              z-index: 2;
+              bottom: 0;
+              left: calc(100%);
+              background: #ffffff;
+              clip-path: polygon(0 0, -50% 150%, 100% 100%);
+            }
+        }
+        .btn-contact{
+            width: 45%;
+            flex: 0 0 45%;
+            text-align: right;
+            border-radius: unset;
+            background-color: #dfe3ea;
+            margin-top: 15px;
+            position: relative;
+            padding: 5px 45px 5px 45px;
+            line-height: 1.5em;
+    
+            .text{	
+                font-size: 12px;
+              font-weight: bold;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+              position: relative;
+              z-index: 2;
+              color: #76787c;
+              transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -webkit-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+            }
+    
+            &:before{
+                transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: calc(100% + 1px);
+                background-color: #fec83f;
+                -webkit-transform-origin: top;
+                transform-origin: top;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+            }
+
+            &:hover{
+                &:before{
+                    transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    -webkit-transition: all 0.5s ease;
+                    -o-transition: all 0.5s ease;
+                    -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+                }
+            }
+    
+        }
+      }
+      
+      &:hover{
+        .bota_contact_content{
+          border-color: #fec83f;
+        }
+        .bota_contact_btn{
+          border-right-color: #fec83f;
+          .bota_contact_mask{
+            border-top-color: #fec83f;
+            &:after{
+              background-color: #fec83f;
+            }
+          }
+    
+          .btn-contact{
+            &:before{
+              transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -webkit-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+              -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+            }
+            .text{
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }   
+  }
