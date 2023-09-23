@@ -75,7 +75,9 @@
     }
     
    &:hover {
+   > a{
     color: #1b1eab;
+   }
     .bota_sub_menu {
       opacity: 1;
       visibility: visible;
