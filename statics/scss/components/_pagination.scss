@@ -1,5 +1,5 @@
 .bota_pagination {
-  margin: 0 0 20px;
+  margin: 20px 0 20px;
   text-align: center;
   .pagination {
     display: inline-block;
@@ -21,35 +21,29 @@
         width: 35px;
         height: 35px;
         line-height: 33px;
-        border: 1px solid #ebebeb;
+        border: 1px solid #ebebeb !important;
         display: block;
         padding: 0;
         color: #6b6b6b;
+        border-radius: 100% !important;
+        min-width: 35px !important;
         -webkit-transition: all .5s;
         -moz-transition: all .5s;
         -o-transition: all .5s;
         -ms-transition: all .5s;
         transition: all .5s;
+        font-weight: 600;
+        i{
+          line-height: 33px;
+        }
       }
-
-      a:hover, span:hover,&.active > a {
-        background-color: #2b97a3;
-        color: #fff;
-        border-color: #2b97a3;
+      &.page-item{
+        &.active .page-link, &:hover .page-link{
+          background-color: #fec83f;
+          border-color: #fec83f !important;
+          color: #fff !important;
+        }
       }
     }
   }
-}
-.icon-long-right:before {
-  content: "\f0da";
-  font-family: 'Font Awesome 5 Pro';
-  font-size: 14px;
-  font-weight: 900;
-}
-
-.icon-long-left:before {
-  content: "\f0d9";
-  font-family: 'Font Awesome 5 Pro';
-  font-size: 14px;
-  font-weight: 900;
 }
