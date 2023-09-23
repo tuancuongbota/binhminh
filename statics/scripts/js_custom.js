@@ -176,6 +176,21 @@ fxheader();
             $('.bota_search').toggleClass('active');
         });
     }
+    if ($(".product-thumbs-slider").length) {
+      var thumberslider = new Swiper('.product-thumbs-slider', {
+         spaceBetween: 0,
+         lazy: true,
+         hashNavigation: true,
+         pagination: {
+            el: ".swiper-pagination",
+          },
+      });
+   }
+   if ($("#lightgallery").length) {
+      $("#lightgallery").lightGallery({
+         thumbnail: false
+      }); 
+   }
 });
 function fxheader() {
     $(window).on('scroll', function () {
