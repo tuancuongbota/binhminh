@@ -3,7 +3,7 @@
       width: 100%;
   
       .bota_block_contact {
-        margin: 100px 30px;
+        margin: 100px 0px;
         display: flex;
         justify-content: space-around;
         @media (max-width: 767px) {
@@ -56,15 +56,15 @@
             border-top: 1px solid rgba(0, 0, 0, 0.125);
   
             &::before {
-              content: "";
-              width: 56px;
-              height: 1px;
-              display: block;
-              right: -47px;
-              bottom: 22px;
-              background-color: rgba(0, 0, 0, 0.125);
-              position: absolute;
-              transform: rotate(49deg);
+                content: "";
+                width: 63px;
+                height: 1px;
+                display: block;
+                right: -50px;
+                bottom: 26px;
+                background-color: rgba(0,0,0,0.125);
+                position: absolute;
+                transform: rotate(54deg);
             }
   
             &::after {
@@ -177,15 +177,24 @@
           .button_contact {
             margin-top: 20px;
             margin-bottom: 20px;
+            width: 50px;
             border: none;
             background-color: #fec83f;
             color: white;
             font-size: 13px;
             font-weight: 700;
-            padding: 20px 50px;
+            padding: 30px 100px;
             position: relative;
             transition: all .3s;
             overflow: hidden;
+            span{
+                font-size: 13px;
+                font-weight: 700;
+                position: absolute;
+                z-index: 1;
+                top: 15px;
+                left: 45px;
+            }
             &:before {
                 transition: all 0.5s ease;
                 -moz-transition: all 0.5s ease;
