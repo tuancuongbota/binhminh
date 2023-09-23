@@ -1,9 +1,10 @@
 body{
 	margin: 0;
 	background-color: #fff;
-	color: #333333;
-    font-size: 14px;
-    line-height: 1.6;
+    font-size: 16px;
+	font-weight: 500;
+	color: #76787c;
+    line-height: 1.9em;
 	font-family: $body-font-family;
 }
 body, input, button, select, textarea, .search-query {
