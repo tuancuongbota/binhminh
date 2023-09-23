@@ -42,6 +42,9 @@
     --color-rating-empty: #bfbfbf;
     --color-rating-filled: #ffc000;
 }
+embed, iframe, object {
+  max-width: 100%;
+}
 .visually-hidden {
   position: absolute!important;
   overflow: hidden;

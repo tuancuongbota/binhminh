@@ -1,252 +1,179 @@
-.bota_container {
-    .bota_contact {
-      width: 100%;
-  
-      .bota_block_contact {
-        margin: 100px 0px;
-        display: flex;
-        justify-content: space-around;
-        @media (max-width: 767px) {
-            margin: 50px 70px;
-        }
-        @media (max-width: 320px){
-            margin: 30px 10px;
-          }
-      }
-  
-      .bota_bg_info_contact {
-        @media (max-width: 767px) {
-            margin-bottom: 20px;
-        }
-        .card {
-          border-bottom: none;
-          border-radius: 0 !important;
-  
-          .card-body {
-            padding: 0 50px 40px 40px;
-            position: relative;
-  
-            h5 {
-              font-weight: 700;
-              font-size: 16px;
-            }
-  
-            p {
-              color: rgb(177, 176, 176);
-            }
-          }
-        }
-  
-        .bota_bg_info_contact_icon img {
-          position: absolute;
-          width: 4rem;
-          height: 4rem;
-          bottom: 10px;
-          right: 30px;
-        }
-  
-        .bota_bg_info_contact {
-          display: flex;
-  
-          .bota_bg_info_contact_color {
-            background-color: white;
-            flex: 0 0 50%;
-            width: 50%;
-            position: relative;
-            border-top: 1px solid rgba(0, 0, 0, 0.125);
-  
-            &::before {
-                content: "";
-                width: 63px;
-                height: 1px;
-                display: block;
-                right: -50px;
-                bottom: 26px;
-                background-color: rgba(0,0,0,0.125);
-                position: absolute;
-                transform: rotate(54deg);
-            }
-  
-            &::after {
-              content: "";
-              width: 54px;
-              height: calc(100%);
-              display: block;
-              position: absolute;
-              z-index: 2;
-              bottom: 0;
-              left: calc(100%);
-              background: #ffffff;
-              clip-path: polygon(0 0, -50% 150%, 70% 100%);
-            }
-          }
-  
-          .bota_bg_info_contact_contact {
-            display: inline-block;
-            border-right: 1px solid rgba(0, 0, 0, 0.125);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-            border-left: 1px solid rgba(0, 0, 0, 0.125);
-            width: 50%;
-            padding-top: 15px;
-            text-align: center;
-  
-            div {
-              background-color: rgb(241, 241, 241);
-              text-align: center;
-              padding: 3px 0 3px 20%;
-            }
-          }
-        }
-      }
-    }
-  
-    .bota_contact_with {
-      width: 100%;
-      text-align: center;
-  
-      .bota_contact_with_title {
-        width: 40%;
-        margin: auto;
-        @media (max-width: 320px) {
-            width: 70%;
-            }
-  
-        h4 {
-          position: relative;
-          @media (max-width: 320px) {
-            font-size: 15px;
-            }
-          &::after {
-            content: "";
-            width: 25px;
-            height: 3px;
-            position: absolute;
-            bottom: -10px;
-            left: calc(47%);
-            background-color: #fec83f;
-            @media (max-width: 320px) {
-                left: calc(45%);
-                }
-          }
-        }
-  
-        h1 {
-          font-size: 40px;
-          font-weight: 800;
-          @media (max-width: 767px) {
-            font-size: 30px;
-            }
-        @media (max-width: 320px) {
-            font-size: 20px;
-            }
-        }
-      }
-  
-      .bota_contact_with_form {
-        width: 60%;
-        margin: auto;
-        margin-top: 4rem;
-        @media (max-width: 1024px) {
-            width: 80%;
-            }
-        @media (max-width: 767px) {
-            width: 80%;
-            }
-            @media (max-width: 320px) {
-                width: 80%;
-                margin-top: 2rem;
-                }
-        .contact_form {
-          .row {
-            margin-bottom: 30px;
-
-          }
-  
-          input, textarea {
-            border-radius: 0 !important;
-            border: 1px solid transparent;
-            outline: none !important;
-            box-shadow: none !important;
-            background-color: rgb(241, 241, 241);
-            padding: 25px 30px !important;
-                &:focus{
-                    border-color: #fec83f;
-            }
-          }
-   
-          .button_contact {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            width: 50px;
-            border: none;
-            background-color: #fec83f;
-            color: white;
-            font-size: 13px;
-            font-weight: 700;
-            padding: 30px 100px;
-            position: relative;
-            transition: all .3s;
-            overflow: hidden;
-            span{
-                font-size: 13px;
-                font-weight: 700;
-                position: absolute;
-                z-index: 1;
-                top: 15px;
-                left: 45px;
-            }
-            &:before {
-                transition: all 0.5s ease;
-                -moz-transition: all 0.5s ease;
-                -webkit-transition: all 0.5s ease;
-                -o-transition: all 0.5s ease;
-                position: absolute;
-                content: "";
-                top: 0;
-                left: 0;
-                right: 0;
-                height: 100%;
-                width: 100%;
-                background-color: transparent;
-                -webkit-transform-origin: top;
-                transform-origin: top;
-                -webkit-transform-style: preserve-3d;
-                transform-style: preserve-3d;
-                -webkit-transform: scaleY(0);
-                transform: scaleY(0);
-                background-color: #1b1eab;
-              }
-          
-              &:hover:before {
-                transition: all 0.5s ease;
-                -moz-transition: all 0.5s ease;
-                -webkit-transition: all 0.5s ease;
-                -o-transition: all 0.5s ease;
-                -webkit-transform: scaleY(1);
-                transform: scaleY(1);
-              }
-          }
-        }
-      }
-    }
-  
-    .contact_map {
-      margin-top: 25px;
-  
-      iframe {
-        width: 100% !important;
-      }
-    }
-  }
-  .bota_contact_page{
+.bota_contact_page{
     position: relative;
+    .bota_contact_with {
+      position: relative;
+      .form-group{
+        margin-bottom: 32px;
+        @media (max-width: 767px){
+          margin-bottom: 15px;
+        }
+      }
+      .bota_contact_title {
+        h3 {
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0;
+          color: #76787c;
+          line-height: 1.2;
+          text-transform: capitalize;
+          margin-bottom: 7px;
+          letter-spacing: 1px;
+          position: relative;
+          padding-bottom: 15px;
+      
+          &:after {
+            content: "";
+            width: 30px;
+            height: 2px;
+            background-color: #fec83f;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      
+        text-align: center;
+        margin-bottom: 60px;
+      
+        h2 {
+          font-size: 50px;
+          font-weight: 800;
+          line-height: 1.21;
+          white-space: pre-line;
+          color: #13223c;
+          max-width: 74%;
+          margin: 0 auto 30px;
+          @media (max-width: 767px){
+            font-size: 25px;
+            white-space: normal;
+            max-width: 100%;
+          }
+        }
+      }
+      input {
+        width: 100%;
+        border-color: transparent;
+        background-color: #eff1f5;
+        padding: 15px 30px !important;
+        border-radius: unset;
+        font-size: 15px;
+        font-weight: 500;
+        outline: 0;
+        transition: all ease-in-out 0.3s;
+        border: 1px solid transparent;
+        height: auto;
+        color: #76787c;
+        box-shadow: unset !important;
+      }
+    
+      textarea {
+        max-height: 168px;
+        width: 100%;
+        border-color: transparent;
+        background-color: #eff1f5;
+        padding: 24px 15px !important;
+        padding-left: 30px !important; 
+        border-radius: unset;
+        font-size: 15px;
+        font-weight: 500;
+        outline: 0;
+        transition: all ease-in-out 0.3s;
+        color: #76787c;
+        box-shadow: unset !important;
+      }
+      button{
+        padding: 20px 47px;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          border-radius: unset;
+          border: unset;
+          transition: all 0.3s linear;
+          -moz-transition: all 0.3s linear;
+          -webkit-transition: all 0.3s linear;
+          -o-transition: all 0.3s linear;
+          background-color: #fec83f;
+          color: #fff;
+          cursor: pointer;
+          line-height: 1.5em;
+          margin: 0 auto 50px;
+          display: block;
+          &:hover{
+            background-color: #fec83f;
+            color: #ffffff;
+          }
+          position: relative;
+          span{
+            position: relative;
+            z-index: 2;
+          }
+          &:before{
+              transition: all 0.5s ease;
+              -moz-transition: all 0.5s ease;
+              -webkit-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+              position: absolute;
+              content: "";
+              top: 0;
+              left: 0;
+              right: 0;
+              height: 100%;
+              width: calc(100% );
+              -webkit-transform-origin: top;
+              transform-origin: top;
+              -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+              -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+                background-color: #1b1eab;
+          }
+  
+          &:hover{
+              &:before{
+                  transition: all 0.5s ease;
+                  -moz-transition: all 0.5s ease;
+                  -webkit-transition: all 0.5s ease;
+                  -o-transition: all 0.5s ease;
+                  -webkit-transform: scaleY(1);
+                  transform: scaleY(1);
+              }
+          }
+      }
+    }
+    .bota_contact_map {
+      iframe {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        line-height: 1;
+        border: none;
+      }
+    
+      line-height: 0;
+    }
+    
+    .bota_contact_top{
+      margin-bottom:100px;
+        @media (max-width: 767px){   
+          margin-bottom:50px;
+      }
+    }
     .bota_contact_info_item{
+      @media (max-width: 1024px){
+        margin-bottom: 30px;
+      }
       .bota_contact_info_box {
         .icon {
           width: 64px;
           position: absolute;
           bottom: 65px;
           right: 40px;
+          @media (max-width: 1024px){   
+            bottom: 80px;
+          }
        }
       }
       .bota_contact_content{
@@ -255,8 +182,9 @@
         padding: 40px;
         padding-bottom: 59px;
         padding-right: 48px;
-          padding-top: 35px;
-          padding-left: 48px;
+        padding-top: 35px;
+        padding-left: 48px;
+        min-height: 254px;
     
         .bota_contact_label{
           font-size: 20px;
@@ -264,7 +192,7 @@
           padding: 0;
           font-weight: 800;
           line-height: 1.2em;
-          color: var(--heading);
+          color: #13223c;
         }
     
         .bota_contact_info{
@@ -339,8 +267,8 @@
             }
         }
         .btn-contact{
-            width: 45%;
-            flex: 0 0 45%;
+            width: 46%;
+            flex: 0 0 46%;
             text-align: right;
             border-radius: unset;
             background-color: #dfe3ea;
@@ -427,4 +355,5 @@
         }
       }
     }   
+   
   }
