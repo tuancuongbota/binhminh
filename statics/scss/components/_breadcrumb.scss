@@ -39,7 +39,7 @@
       padding: 150px 0px 150px 0px;
       font-size: 50px;
       font-weight: 700;
-      text-transform: capitalize;
+      text-transform: uppercase;
       @media (max-width: 1024px){
         padding: 130px 20px 130px 20px
       }
@@ -116,6 +116,7 @@
       margin: 0;
     
       .breadcrumb-item {
+        text-transform: uppercase;
         + .breadcrumb-item::before {
           content: "\f105";
           color: #fff;

@@ -86,29 +86,6 @@
     }
   }
   
-  .grid-layout {
-    .isotope > article {
-      opacity: 0;
-      visibility: hidden;
-      -webkit-transition: opacity ease 0.35s;
-      -moz-transition: opacity ease 0.35s;
-      transition: opacity ease 0.35s;
-  
-      &.grid-visible {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  
-    article.post .post-format-wrap .post-overlay-items {
-      padding: 0 20px 20px;
-    }
-  
-    .article-inner > *:first-child {
-      margin-top: 20px;
-    }
-  }
-  
   .article-inner > .post-format-wrap {
     margin-top: 0;
   }
@@ -323,6 +300,76 @@
   }
   
 }
+.grid-layout {
+  .isotope > article {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity ease 0.35s;
+    -moz-transition: opacity ease 0.35s;
+    transition: opacity ease 0.35s;
+
+    &.grid-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  article.post .post-format-wrap .post-overlay-items {
+    padding: 0 20px 20px;
+  }
+
+  .article-inner > *:first-child {
+    margin-top: 20px;
+  }
+}
+.bota_pr_portfolio_item{
+  .bota_pr_portfolio_img {
+    position: relative;
+    overflow: hidden;
+  
+    .portfolio-title {
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      list-style: none;
+      margin: 0;
+      padding: 10px 24px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: #273271;
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      opacity: 0;
+      visibility: hidden;
+      left: 0;
+    }
+  
+    &:hover {
+      .portfolio-title {
+        opacity: 1;
+        bottom: 0;
+        visibility: visible;
+      }
+  
+      img {
+        transition: all 0.75s;
+        transform: scale(1.2);
+      }
+    }
+  
+    .portfolio-title h3 {
+      margin: 0;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
 .bota_product_detail_page{
   
   .bota_product_detail_info{
