@@ -32,7 +32,7 @@
   .bota_breadcrumb_banner {
     h1 {
       line-height: 1.1em;
-      max-width: 1190px;
+      max-width: 1200px;
       text-align: left;
       margin: 0 auto;
       color: #FFFFFF;
@@ -40,6 +40,8 @@
       font-size: 50px;
       font-weight: 700;
       text-transform: uppercase;
+      padding-right: 15px;
+      padding-left: 15px;
       @media (max-width: 1024px){
         padding: 130px 20px 130px 20px
       }
