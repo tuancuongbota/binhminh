@@ -88,6 +88,35 @@ $portrait-mobile:"(max-width: 320px)";
 
 }
 @media only screen and #{$landscape-mobile-big}{
+	.bota_job_page_top_is {
+		.bota_job_page_top_center {
+		  width: 100%;
+		  margin: 30px 0 30px;
+		}
+	  
+		.bota_job_page_top_left {
+		  margin: auto;
+		  display: block;
+		  float: none;
+		}
+	  
+		text-align: center;
+	  
+		.bota_job_page_top_right {
+		  text-align: center;
+		  float: none;
+		  width: 100%;
+		}
+	  }
+	  
+	  .bota_job_page_recruit_btn {
+		width: 100%;
+	  }
+	  
+	  .bota_job_info_employer {
+		margin-bottom: 30px;
+	  }
+	  
 	.bota_product_cate {
 		.portfolio-filter.filter-2 {
 		  a.portfolio-filter-item {

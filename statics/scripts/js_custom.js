@@ -191,6 +191,22 @@ fxheader();
          thumbnail: false
       }); 
    }
+   if ($(".bota_job_empoyer_remore").length) {
+      $('.bota_job_empoyer_remore .read-more').each(function () {
+         $(this).click(function (e) {
+            e.preventDefault();
+            $(this).closest('.bota_job_empoyer_des').addClass("active");
+         });
+      });
+      $('.bota_job_empoyer_remore .read-less').each(function () {
+         $(this).click(function (e) {
+            e.preventDefault();
+            $(this).closest('.bota_job_empoyer_des').removeClass("active");
+         });
+      });
+      checkHeight();
+   }
+   
 });
 function fxheader() {
     $(window).on('scroll', function () {
@@ -218,3 +234,12 @@ function isotopeArrange() {
        $(this)[0].pause()
     })
  }
+ function checkHeight() {
+   var h1 = $(".bota_job_info_employer .bota_job_empoyer_text").height();
+   if (h1 > 215) {
+      $(".bota_job_info_employer .bota_job_empoyer_des").addClass("more-less");
+   }
+}
+$(window).resize(function () {
+   checkHeight();
+});

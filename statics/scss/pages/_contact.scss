@@ -66,6 +66,9 @@
         height: auto;
         color: #76787c;
         box-shadow: unset !important;
+        &:focus{
+          border-color: #fec83f;
+        }
       }
     
       textarea {
@@ -82,6 +85,9 @@
         transition: all ease-in-out 0.3s;
         color: #76787c;
         box-shadow: unset !important;
+        &:focus{
+          border-color: #fec83f;
+        }
       }
       button{
         padding: 20px 47px;
