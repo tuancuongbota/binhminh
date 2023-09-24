@@ -14424,7 +14424,7 @@ table { width: 100% !important; }
 .bota_footer_logo { margin-bottom: 15px; }
 .bota_footer_title { font-weight: bold; position: relative; color: #fff; font-size: 25px; margin-bottom: 25px; }
 .bota_footer_text ul li { padding-left: 30px; position: relative; margin-bottom: 15px; }
-.bota_footer_text ul li i { position: absolute; left: 0; top: 5px; color: #fff; }
+.bota_footer_text ul li i { position: absolute; left: 0; top: 10px; color: #fff; }
 .bota_footer_text ul li a { color: #999; }
 .bota_footer .bota_subscribe_desc { color: #999; font-size: 14px; }
 .bota_footer .bota_subscribe_form { position: relative; margin-bottom: 35px; }
@@ -14527,6 +14527,47 @@ button, input, select { outline: none; }
 .bota_reamore_btn a:before { transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; position: absolute; content: ""; top: 0; left: 0; right: 0; height: 100%; width: 101%; background-color: transparent; -webkit-transform-origin: top; transform-origin: top; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform: scaleY(0); transform: scaleY(0); background-color: #fec83f; }
 .bota_reamore_btn a:hover:before { transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transform: scaleY(1); transform: scaleY(1); }
 .bota_reamore_btn span { z-index: 1; position: relative; }
+
+.bota_job_item { position: relative; }
+.bota_job_item .bota_job_figure { -webkit-transition: 0.4s ease-in-out all; -o-transition: 0.4s ease-in-out all; display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -ms-flex-wrap: wrap; flex-wrap: wrap; overflow: hidden; border-top: 1px solid #e5e5e5; transition: 0.4s ease-in-out all; padding: 15px; }
+.bota_job_item .bota_job_figure .bota_job_image { border: 1px solid #e5e5e5; border-radius: 5px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-flex: 0; -ms-flex: 0 0 168px; flex: 0 0 168px; max-width: 168px; height: 135px; }
+.bota_job_item .bota_job_figure .bota_job_image img { max-width: 100%; max-height: 100%; }
+.bota_job_item .bota_job_figure .bota_job_image a { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; height: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 5px; }
+.bota_job_item .bota_job_figure .bota_job_figcaption { padding-left: 15px; -webkit-box-flex: 0; -ms-flex: 0 0 calc(100% - 183px); flex: 0 0 calc(100% - 183px); max-width: calc(100% - 183px); }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_title { margin-bottom: 3px; position: relative; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_title h2 { font-weight: 800; line-height: 1.2; font-size: 17px; -o-text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; margin: 0; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_title h2 a { -webkit-transition: 0.4s ease-in-out all; transition: 0.4s ease-in-out all; color: #f00401; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_title h2 a:hover { color: #fec83f; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption { font-size: 14px; color: #5d677a; line-height: 1.4; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .bota_job_company_name { color: #5d677a; line-height: 1.5; -o-text-overflow: ellipsis; -webkit-line-clamp: 1; -webkit-box-orient: vertical; display: -webkit-box; overflow: hidden; text-overflow: ellipsis; font-size: 14px; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption * { line-height: 1.5; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .salary { color: #008563; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption p { margin: 0; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption em { width: 20px; padding-right: 5px; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .location { color: #5d677a; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .expire-date { color: #5d677a; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .welfare { display: -webkit-box; display: -ms-flexbox; display: flex; padding-bottom: 15px; margin-top: 10px; color: #5d677a; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .welfare li { font-size: 14px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .welfare li + li { margin-left: 12px; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .welfare li span { font-size: 14px; margin-right: 4px; line-height: initial; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bota_job_caption .welfare li span.fa-plane { -webkit-transform: rotate(-40deg); transform: rotate(-40deg); }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon { display: -webkit-box; display: -ms-flexbox; display: flex; z-index: 11; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; bottom: 30px; max-width: 250px; font-size: 14px; position: absolute; right: 30px; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon ul { -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; width: auto; margin-top: 0; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon ul li { float: left; width: 100%; display: block; text-align: right; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon ul li a { -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-decoration: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; cursor: pointer; line-height: 1.5; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon ul li a i { margin-right: 8px; line-height: 1; cursor: pointer; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon ul li a .text { display: block; padding-left: 5px; color: #5d677a; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon ul li a:hover { color: #fec83f; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon ul li a:hover .text { color: #fec83f; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon .bota_job_time { -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; position: relative; text-align: right; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; width: 100%; line-height: 1.5; }
+.bota_job_item .bota_job_figure .bota_job_figcaption .bottom-right-icon .bota_job_time em { padding-right: 5px; }
+
+.bota_block_recruits_cate { position: relative; margin-bottom: 30px; border: 1px solid #ddd; border-radius: 15px; overflow: hidden; }
+.bota_block_recruits_cate .bota_block_recruits_title { margin: 0; padding: 15px; background-color: #fec83f; color: #1b1eab; font-weight: 800; font-size: 20px; border-top-left-radius: 15px; border-top-right-radius: 15px; }
+.bota_block_recruits_cate .bota_block_recruits_list li { border-bottom: 1px solid #ddd; }
+.bota_block_recruits_cate .bota_block_recruits_list li a { padding: 10px 15px; display: block; }
+.bota_block_recruits_cate .bota_block_recruits_list li:last-child { border: none; }
+.bota_block_recruits_cate .bota_block_recruits_list li a:hover { color: #1b1eab; }
 
 .bota_news_home { padding: 60px 0px 60px 0px; position: relative; }
 
