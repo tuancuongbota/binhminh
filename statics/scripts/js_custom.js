@@ -91,6 +91,49 @@ $(document).ready(function(){
         });
     });
  }
+ if($('.history_slider').length){
+   $('.history_slider').slick({
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       arrows: false,
+       fade: true,
+       infinite: true,
+       asNavFor: '.history_slider_date',
+       cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+       speed: 1000,
+       responsive: [
+           {
+               breakpoint: 992,
+               settings: {
+                   adaptiveHeight: true
+               }
+           },
+       ]
+   });
+   $('.history_slider_date').slick({
+       slidesToShow: 4,
+       slidesToScroll: 1,
+       asNavFor: '.history_slider',
+       dots: false,
+       arrows: false,
+       focusOnSelect: true,
+       infinite: true,
+       responsive: [
+           {
+               breakpoint: 992,
+               settings: {
+                   slidesToShow: 3,
+               }
+           },
+           {
+               breakpoint: 768,
+               settings: {
+                   slidesToShow: 2,
+               }
+           },
+       ]
+   });
+}
 backtotop();
 fxheader();
 

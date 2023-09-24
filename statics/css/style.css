@@ -13493,6 +13493,39 @@ label.mm-check:before { border-color: rgba(0, 0, 0, 0.75); }
 
 .mm-menu_tileview .mm-panel:after, .mm-menu_tileview .mm-panel:before, .mm-panel_tileview:after, .mm-panel_tileview:before { content: none; display: none; }
 
+/* Slider */
+.slick-none { display: none; }
+
+.slick-slider { position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+
+.slick-list { position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
+.slick-list:focus { outline: none; }
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.slick-track { position: relative; top: 0; left: 0; display: block; margin-left: auto; margin-right: auto; }
+.slick-track:before { display: table; content: ''; }
+.slick-track:after { display: table; content: ''; clear: both; }
+
+.slick-loading .slick-track { visibility: hidden; }
+
+.slick-slide { display: none; float: left; height: 100%; min-height: 1px; }
+
+[dir='rtl'] .slick-slide { float: right; }
+
+.slick-slide img { display: block; }
+.slick-slide.slick-loading img { display: none; }
+.slick-slide.dragging img { pointer-events: none; }
+
+.slick-initialized .slick-slide { display: block; }
+
+.slick-loading .slick-slide { visibility: hidden; }
+
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden { display: none; }
+
 /* This is the default Tooltipster theme (feel free to modify or duplicate and create multiple themes!): */
 .tooltipster-default { border-radius: 5px; border: none; background: #000; color: #fff; margin: 0; }
 
@@ -14527,6 +14560,41 @@ button, input, select { outline: none; }
 .bota_reamore_btn a:before { transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; position: absolute; content: ""; top: 0; left: 0; right: 0; height: 100%; width: 101%; background-color: transparent; -webkit-transform-origin: top; transform-origin: top; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-transform: scaleY(0); transform: scaleY(0); background-color: #fec83f; }
 .bota_reamore_btn a:hover:before { transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transform: scaleY(1); transform: scaleY(1); }
 .bota_reamore_btn span { z-index: 1; position: relative; }
+
+.bota_info_page { color: #000; }
+.bota_info_page .bota_info_top { margin-bottom: 100px; }
+@media only screen and (max-width: 767px) { .bota_info_page .bota_info_top { margin-bottom: 40px; } }
+.bota_info_page .bota_info_top .bota_info_detail_desc { font-size: 15px; }
+@media only screen and (max-width: 992px) { .bota_info_page .bota_info_detail_img { margin-bottom: 15px; } }
+.bota_info_page .bota_info_detail_title { text-transform: uppercase; font-weight: 800; font-size: 32px; color: #f90504; margin-top: 0; text-align: center; }
+@media only screen and (max-width: 767px) { .bota_info_page .bota_info_detail_title { font-size: 21px; } }
+.bota_info_page .bota_info_detail_title:after { content: ''; display: block; height: 3px; margin: 15px auto 40px; width: 80px; background: #f90504; }
+.bota_info_page .bota_info_history { padding-top: 70px; padding-bottom: 70px; position: relative; background-size: cover; background-repeat: no-repeat; background-position: 50%; }
+.bota_info_page .bota_info_history:before { content: ""; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7))); background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%); }
+.bota_info_page .bota_info_history .slick-slide { height: inherit; }
+.bota_info_page .bota_info_history .bota_history_title { margin-bottom: 50px; color: #fff; text-align: center; font-size: 32px; text-transform: uppercase; position: relative; margin-top: 0; font-weight: 800; }
+@media only screen and (max-width: 767px) { .bota_info_page .bota_info_history .bota_history_title { font-size: 21px; } }
+.bota_info_page .bota_info_history .bota_history_title:after { content: ''; display: block; height: 3px; margin: 15px auto 40px; width: 80px; background: #fff; }
+.bota_info_page .bota_info_history .container { position: relative; }
+.bota_info_page .bota_info_history .history_slider_date:before { content: ""; height: 0; border-bottom: 2px solid #fff; width: 100%; position: absolute; top: 10px; left: 0; }
+.bota_info_page .bota_info_history .history_slider_date_item { font-weight: 700; font-size: 15px; line-height: 24px; color: #fff; text-align: center; position: relative; padding-top: 25px; height: inherit; }
+.bota_info_page .bota_info_history .history_slider_date-item.slick-current:after { border-color: #ffffff; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+.bota_info_page .bota_info_history .history_slider_date_item.slick-current:before, .bota_info_page .bota_info_history .history_slider_date_item:hover:before { background-color: #e3322b; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+.bota_info_page .bota_info_history .history_slider_date_item.slick-current:after { content: ""; width: 20px; height: 20px; border: 1px solid #fff; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 50%; position: absolute; top: 1px; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); cursor: pointer; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+.bota_info_page .bota_info_history .history_slider_date_item:before { content: ""; width: 12px; height: 12px; background-color: #fff; display: block; position: absolute; top: 5px; border-radius: 50%; left: 50%; -webkit-transform: translatex(-50%); transform: translatex(-50%); cursor: pointer; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
+.bota_info_page .bota_info_history .history_slider_item .content { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; height: 372px; }
+@media only screen and (max-width: 992px) { .bota_info_page .bota_info_history .history_slider_item .content { height: auto; } }
+.bota_info_page .bota_info_history .history_slider_item .content .history_slider_image { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; width: 50%; height: 100%; }
+@media only screen and (max-width: 992px) { .bota_info_page .bota_info_history .history_slider_item .content .history_slider_image { width: 100%; height: 200px; } }
+.bota_info_page .bota_info_history .history_slider_item .content .history_slider_image img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+.bota_info_page .bota_info_history .history_slider_item .content .history_slider_content { background: #fff; border: 1px solid #f0f0f2; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; width: 50%; padding: 30px; text-align: left; }
+@media only screen and (max-width: 992px) { .bota_info_page .bota_info_history .history_slider_item .content .history_slider_content { width: 100%; padding: 15px; } }
+.bota_info_page .bota_info_history .history_slider_item .content .history_slider_content .date { font-weight: 700; font-size: 15px; line-height: 24px; color: #3c3c46; }
+.bota_info_page .bota_info_history .history_slider_item .content .history_slider_content .history_slider_title { font-weight: 700; font-size: 24px; line-height: 32px; color: #f00401; margin-top: 20px; margin-bottom: 20px; text-align: left; text-transform: uppercase; }
+@media only screen and (max-width: 992px) { .bota_info_page .bota_info_history .history_slider_item .content .history_slider_content .history_slider_title { font-size: 15px; line-height: 26px; } }
+@media only screen and (max-width: 454px) { .bota_info_page .bota_info_history .history_slider_item .content .history_slider_content .history_slider_title { font-size: 12px; line-height: 22px; } }
+.bota_info_page .bota_info_history .history_slider_item .content .history_slider_content .description { max-height: 180px; height: 100%; overflow: hidden; text-align: justify; font-weight: 400; font-size: 15px; line-height: 24px; color: #3c3c46; }
+@media only screen and (max-width: 992px) { .bota_info_page .bota_info_history .history_slider_item .content .history_slider_content .description { max-height: -webkit-max-content; max-height: -moz-max-content; max-height: max-content; overflow: auto; } }
 
 .bota_job_item { position: relative; }
 .bota_job_item .bota_job_figure { -webkit-transition: 0.4s ease-in-out all; -o-transition: 0.4s ease-in-out all; display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; -ms-flex-wrap: wrap; flex-wrap: wrap; overflow: hidden; border-top: 1px solid #e5e5e5; transition: 0.4s ease-in-out all; padding: 15px; }
