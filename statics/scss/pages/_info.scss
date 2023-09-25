@@ -153,13 +153,55 @@
     @media only screen and (max-width: 767px){
       margin-bottom: 40px;
     }
+    &.bota_info_operator,&.bota_info_introduction{
+      .container{
+        @media (min-width: 1200px){
+          max-width: 1000px;
+        }
+      }
+    }
     .bota_info_detail_desc {
       font-size: 15px;
+      h3 {
+        font-weight: 800;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+    
+      p {
+        margin-bottom: 15px;
+      }
+    
+    
+      ul {
+        padding-left: 30px;
+        margin-bottom: 15px;
+    
+        li {
+          list-style: disc;
+          margin-bottom: 15px;
+        }
+      }
     }
   }
   .bota_info_detail_img{
+    img{
+      margin: auto;
+      display: block;
+    }
     @media only screen and (max-width: 992px){
       margin-bottom: 15px;
+    }
+    .bota_info_detail_name {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    .bota_info_detail_position {
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
     }
   }
   .bota_info_detail_title  {
