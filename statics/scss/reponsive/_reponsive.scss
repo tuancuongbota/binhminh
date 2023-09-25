@@ -150,7 +150,46 @@ $portrait-mobile:"(max-width: 320px)";
 	  .bota_header_right {
 		justify-content: center;
 	}
+	.bota_block_info {
+		.bota_block_info_img {
+			img {
+				margin: auto;
+				display: block;
+			}
+			.ova-counter {
+				left: calc(100% - 37.5%);
+				top: 18%;
+				padding: 0;
+				max-width: 80px;
+			
+			.odometer-wrapper {
+				.odometer {
+					font-size: 35px;
+					}
+				
+					.title {
+					font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	  
 }
 @media only screen and #{$portrait-mobile}{
-	
+	.bota_block_info .bota_block_info_img .ova-counter {
+		.odometer-wrapper {
+		  .odometer {
+			font-size: 30px;
+			
+		  }
+	  
+		  .title {
+			font-size: 11px;
+		  }
+		}
+		max-width: 67px;
+	  }
+	  
+	  
 }

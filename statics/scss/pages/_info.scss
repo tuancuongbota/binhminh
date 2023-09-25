@@ -6,7 +6,55 @@
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 110px 0px 0px 0px;
   position: relative;
-
+  .bota_block_info_img {
+    .ova-counter {
+      transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      row-gap: 15px;
+      padding: 18px 30px;
+      max-width: 135px;
+      text-align: center;
+      flex-wrap: nowrap;
+      width: auto;
+      top: 107px;
+      z-index: 2;
+      left: 355px;
+      position: absolute;
+  
+      .odometer-wrapper {
+        .odometer {
+          color: #fff;
+          font-size: 50px;
+          font-weight: 800;
+          line-height: 1.3;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+        }
+  
+        .title {
+          transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          margin: 0;
+          font-weight: 500;
+          line-height: 1.3;
+          color: #fff;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  
+    position: relative;
+  }
+  
   .bota_bg_overlay {
     height: 100%;
     width: 100%;

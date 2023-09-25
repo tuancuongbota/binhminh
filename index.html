@@ -13,8 +13,11 @@
     <script type="text/javascript" src="statics/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript" src="statics/plugins/isotope/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="statics/plugins/mmenu/jquery.mmenu.all.js"></script>
-    <script src="statics/plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="statics/plugins/fancybox/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="statics/plugins/slick/slick.min.js"></script>
+    <script type="text/javascript" src="statics/scripts/waypoints.min.js"></script>
+    <script type="text/javascript" src="statics/scripts/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="statics/scripts/aos.js"></script>
     <script type="text/javascript" src="statics/scripts/js_custom.js"></script>
     <script>
         $(document).ready(function() {
@@ -26,7 +29,7 @@
             });
         });
     </script>
-    <body>
+     <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
         <div class="main_page">
             <header class="bota_header">
                 <div class="bota_header_top">
@@ -248,12 +251,19 @@
                 <div class="bota_bg_overlay"></div>
                 <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-sm-12 animated ova-move-left">
+                    <div class="col-xl-6 col-lg-6 col-sm-12" data-aos="fade-right">
                         <div class="bota_block_info_img">
-                            <img src="statics/imgs/info.png" class="img-fluid" alt="Giới thiệu" />
+                            <img src="statics/imgs/info-v2.png" class="img-fluid" alt="Giới thiệu" />
+                            <div class="ova-counter">
+                                <div class="odometer-wrapper">
+                                    <span class="odometer">35</span>
+                                    <span class="suffix"></span>
+                                    <h4 class="title">Years Experience</h4>
+                                 </div>
+                            </div>  
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-sm-12 animated ova-move-down">
+                    <div class="col-xl-6 col-lg-6 col-sm-12" data-aos="fade-up">
                         <div class="bota_block_info_top">
                             <div class="bota_block_info_title">
                                 <h2><span>Giới thiệu</span></h2>
@@ -306,11 +316,11 @@
             <div class="bota_factory">
                 <div class="bota_factory_bg_overlay" style="background-image: url(statics/imgs/mechanical.png);"></div>
                 <div class="container">
-                    <div class="bota_title_all animated-fast animated ova-move-up">
+                    <div class="bota_title_all">
                         <h2><span>Nhà máy bình minh</span></h2>
                     </div>
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-sm-12 col-12 animated-fast animated ova-move-up">
+                        <div class="col-xl-4 col-lg-4 col-sm-12 col-12" data-aos="fade-up">
                             <div class="bota_factory_item">
                                 <div class="ova-counter">
                                     <div class="icon">
@@ -318,7 +328,7 @@
                                         <i aria-hidden="true" class="icon-settings flaticon flaticon-settings"></i>
                                     </div>
                                     <div class="odometer-wrapper">
-                                        <span class="odometer" data-count="176">0</span><span class="suffix">+</span>
+                                        <span class="odometer">176</span><span class="suffix">+</span>
                                         <h4 class="title">
                                             Phân xưởng							
                                         </h4>
@@ -326,7 +336,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-sm-12 col-12 animated-fast animated ova-move-up">
+                        <div class="col-xl-4 col-lg-4 col-sm-12 col-12" data-aos="fade-up"> 
                             <div class="bota_factory_item">
                                 <div class="ova-counter">
                                     <div class="icon">
@@ -334,7 +344,7 @@
                                         <i aria-hidden="true" class="icon-settings flaticon flaticon-settings"></i>
                                     </div>
                                     <div class="odometer-wrapper">
-                                        <span class="odometer" data-count="800">0</span><span class="suffix">+</span>
+                                        <span class="odometer">800</span><span class="suffix">+</span>
                                         <h4 class="title">
                                             Máy móc					
                                         </h4>
@@ -342,7 +352,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-sm-12 col-12 animated-fast animated ova-move-up">
+                        <div class="col-xl-4 col-lg-4 col-sm-12 col-12" data-aos="fade-up">
                             <div class="bota_factory_item">
                                 <div class="ova-counter">
                                     <div class="icon">
@@ -350,7 +360,7 @@
                                         <i aria-hidden="true" class="icon-settings flaticon flaticon-settings"></i>
                                     </div>
                                     <div class="odometer-wrapper">
-                                        <span class="odometer" data-count="230">0</span><span class="suffix">+</span>
+                                        <span class="odometer">230</span><span class="suffix">+</span>
                                         <h4 class="title">
                                            Nhân lực					
                                         </h4>
@@ -363,12 +373,12 @@
             </div>
             <div class="bota_why">
                 <div class="container">
-                    <div class="bota_title_main animated-fast animated ova-move-up">
+                    <div class="bota_title_main" data-aos="fade-up">
                         <h2>Tại Sao Chọn Chúng Tôi</h2>
                     </div>
                     <div class="bota_why_list">
                         <div class="row align-items-center">
-                            <div class="col-xl-7 col-lg-7 coll-sm-7 animated-fast animated ova-move-up">
+                            <div class="col-xl-7 col-lg-7 coll-sm-7" data-aos="fade-right">
                                 <div class="bota_why_desc">
                                     <ul class="about-info clearfix">
                                         <li><img src="statics/imgs/Layer.png" width="30" height="30" alt="icon">15 năm kinh nghiệm</li>
@@ -383,7 +393,7 @@
                                      </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-5 col-lg-5 coll-sm-5 animated-fast animated ova-move-up">
+                            <div class="col-xl-5 col-lg-5 coll-sm-5" data-aos="fade-left">
                                 <div class="bota_why_video">
                                     <iframe width="560" height="245" src="https://www.youtube.com/embed/VrGD-yRDkfM?si=TIzqPF1vPwdc9ICa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                 </div>
@@ -394,10 +404,10 @@
             </div>
             <div class="bota_product_cate">
                 <div class="container">
-                    <div class="bota_title_all animated-fast animated ova-move-up">
+                    <div class="bota_title_all" data-aos="fade-up">
                         <h2><span>Sản phẩm bình minh</span></h2>
                     </div>
-                    <div class="portfolio-wrapper animated-fast animated ova-move-up">
+                    <div class="portfolio-wrapper" data-aos="fade-up">
                         <div class="portfolio-filter filter-2">
                             <ul class="nav m-auto d-block text-center">
                                <li class="active"><a href="#" class="portfolio-filter-item">Tất cả</a></li>
@@ -406,7 +416,7 @@
                                <li class=""><a href="#" class="portfolio-filter-item" data-filter=".portfolio-filter-3">Chi tiết máy</a></li>
                             </ul>
                          </div>
-                         <div class="image-gallery grid-layout portfolio-grid-layout  animated-fast animated ova-move-up">
+                         <div class="image-gallery grid-layout portfolio-grid-layout ">
                             <div class="isotope" data-cols="3" data-gutter="40" data-layout="fitRows" data-infinite="false">
                                 <article class="bota_pr_portfolio_item portfolio-default portfolio-filter-1">
                                     <div class="bota_pr_portfolio_wrap">
@@ -559,10 +569,10 @@
             </div>
             <div class="bota_news_home">
                 <div class="container">
-                    <div class="bota_title_all animated-fast animated ova-move-up">
+                    <div class="bota_title_all">
                         <h2><span>Tin tức - Sự kiện</span></h2>
                     </div>
-                    <div class="bota_news_home_list row animated-fast animated ova-move-up">
+                    <div class="bota_news_home_list row">
                         <div class="col-xl-4 col-lg-4 col-sm-6 margin-bottom-30">
                             <div class="bota_news_item">
                                 <div class="bota_news_media">
@@ -709,7 +719,7 @@
             </div>
             <div class="bota_slide_logo">
                 <div class="container">
-                    <div class="bota_title_all animated-fast animated ova-move-up">
+                    <div class="bota_title_all">
                         <h2><span>Đối Tác Bình Minh</span></h2>
                     </div>
                     <div class="bota_slide_logo_list">
