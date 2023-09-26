@@ -506,16 +506,24 @@
     background: #fff;
     height: 100%;
     padding: 15px;
+    border-radius: 10px;
     .bota_info_core_item_title {
       font-weight: 800;
-      font-size: 18px;
+      font-size: 16px;
       text-transform: uppercase;
+      background: #fec83f;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
       }
       
       .bota_info_core_item_desc {
         font-size: 14px;
         text-align: justify;
         line-height: 1.5;
+        p{
+          margin-bottom: 0;
+        }
       }
   }
 }
