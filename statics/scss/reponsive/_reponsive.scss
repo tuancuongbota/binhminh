@@ -6,6 +6,20 @@ $landscape-mobile-big:"(max-width:767px)";
 $landscape-mobile:"(max-width:480px)";
 $portrait-mobile:"(max-width: 320px)";
 @media only screen and #{$landscape-tablets}{
+	.bota_block_info {
+		.bota_block_info_img {
+			img {
+				margin: auto;
+				display: block;
+			}
+			.ova-counter {
+				left: calc(100% - 34.5%);
+				top: 18%;
+				padding: 0;
+				max-width: 80px;
+			}
+		}
+	}
 	.nxtActiveMenu>li>a{
 		font-size: 11px;
 	}
@@ -85,9 +99,58 @@ $portrait-mobile:"(max-width: 320px)";
 	}
 }
 @media only screen and #{$portrait-tablets}{
-
+	.bota_block_info {
+		.bota_block_info_img {
+			img {
+				margin: auto;
+				display: block;
+			}
+			.ova-counter {
+				left: calc(100% - 31.5%);
+				top: 23%;
+				padding: 0;
+				max-width: 80px;
+			}
+		}
+	}
 }
 @media only screen and #{$landscape-mobile-big}{
+	.bota_side_nav {
+		width: 100%;
+		padding: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		border-radius: unset;
+		border: none;
+		background-color: #fff;
+	  
+		> ul {
+		  display: flex;
+		  justify-content: space-between;
+		  padding: 0 10px;
+	  
+		  > li {
+			flex: 1;
+		  }
+		}
+	  
+		li {
+		  a {
+			white-space: nowrap;
+			padding: 3px 5px;
+		  }
+	  
+		  &:last-child {
+			position: relative;
+		  }
+		}
+	  }
+	  
+	  .back-to-top {
+		bottom: 100px;
+	  }
+	  
 	.bota_job_page_top_is {
 		.bota_job_page_top_center {
 		  width: 100%;
@@ -189,6 +252,14 @@ $portrait-mobile:"(max-width: 320px)";
 		  }
 		}
 		max-width: 67px;
+	  }
+	  .bota_side_nav li a {
+		img {
+		  width: 20px;
+		  height: 20px;
+		}
+	  
+		font-size: 7px;
 	  }
 	  
 	  

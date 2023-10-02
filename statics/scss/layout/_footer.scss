@@ -162,7 +162,7 @@
 	display: none;
 	position: fixed;
 	z-index: 999;
-	right: 15px;
+	right: 25px;
 	bottom: 15px;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -192,6 +192,48 @@
 	}
 	&.show {
 		display: inline;
+	}
+  }
+  .bota_side_nav {
+	width: auto;
+	z-index: 150;
+	bottom: 110px;
+	padding: 10px 0;
+	border: 1px solid #ec2127;
+	right: 13px;
+	background: #ffffff85;
+	border-radius: 5px;
+	position: fixed;
+	padding-bottom: 20px;
+  
+	li {
+	  margin-bottom: 5px;
+	  position: relative;
+
+  
+	  a {
+		padding: 3px;
+		display: block;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 10px;
+		line-height: 15px;
+		color: #515151;
+		font-weight: 700;
+		max-width: 72.19px;
+		max-height: 54px;
+  
+		img {
+		  width: 33px;
+		  height: 33px;
+		  display: block;
+		  margin: 0 auto 2px;
+		}
+	  }
+  
+	  &:last-child {
+		position: absolute;
+	  }
 	}
   }
   
