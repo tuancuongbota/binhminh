@@ -69,6 +69,46 @@ $(document).ready(function(){
         }
     });
 }
+if ($(".news-slider").length) {
+   var swipernews = new Swiper('.news-slider', {
+       slidesPerView: 3,
+       grabCursor: true,
+       roundLengths: true,
+       slideToClickedSlide: false,
+       autoplay: {
+           delay: 3000,
+           disableOnInteraction: false,
+       },
+       loop: true,
+       speed: 1000,
+       spaceBetween: 0,
+       pagination: false,
+       navigation: {
+           nextEl: '.news-slider .swiper-button-next',
+           prevEl: '.news-slider .swiper-button-prev',
+       },
+       breakpoints: {
+           300: {
+               slidesPerView: 1
+           },
+           500: {
+               slidesPerView: 2
+           },
+           640: {
+               slidesPerView: 2
+           },
+           768: {
+               slidesPerView: 2
+           },
+           991: {
+               slidesPerView: 2
+           },
+           1200: {
+               slidesPerView: 3
+           }
+       }
+   });
+}
  if ($(".odometer").length) {
    $('.odometer').counterUp({ delay: 20, time: 2000 });
  }
