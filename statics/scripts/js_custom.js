@@ -68,6 +68,7 @@ $(document).ready(function(){
             }
         }
     });
+}
 if ($(".news-slider").length) {
    var swipernews = new Swiper('.news-slider', {
        slidesPerView: 3,
@@ -301,7 +302,7 @@ if ($(".product-tab").length) {
       checkHeight();
    }
    
-});
+   });
 function activeTab(obj){
    $('.product-tab ul li').removeClass('active');
    $(obj).addClass('active');
