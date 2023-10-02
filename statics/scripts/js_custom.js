@@ -68,7 +68,6 @@ $(document).ready(function(){
             }
         }
     });
-}
 if ($(".news-slider").length) {
    var swipernews = new Swiper('.news-slider', {
        slidesPerView: 3,
