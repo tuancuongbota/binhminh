@@ -72,6 +72,30 @@ $(document).ready(function(){
  if ($(".odometer").length) {
    $('.odometer').counterUp({ delay: 20, time: 2000 });
  }
+ if($('.slick-tab-product').length){
+   $('.slick-tab-product').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: true,
+      infinite: true,
+      rows:2,
+      responsive: [
+         {
+               breakpoint: 992,
+               settings: {
+                  slidesToShow: 3,
+               }
+         },
+         {
+               breakpoint: 768,
+               settings: {
+                  slidesToShow: 2,
+               }
+         },
+      ]
+   });
+ }
  if($('.history_slider').length){
    $('.history_slider').slick({
        slidesToShow: 1,
@@ -119,6 +143,12 @@ $(document).ready(function(){
 backtotop();
 fxheader();
 
+if ($(".product-tab").length) {
+   $('.product-tab ul li').click(function(){
+      activeTab(this);
+      return false;
+   });
+}
  if ($(".grid-layout > .isotope").length) {
     $(".grid-layout > .isotope").each(function () {
        var c_elem = $(this);
@@ -233,6 +263,13 @@ fxheader();
    }
    
 });
+function activeTab(obj){
+   $('.product-tab ul li').removeClass('active');
+   $(obj).addClass('active');
+   var id = $(obj).attr('data-tab');
+   $('.tab-content').removeClass('active');
+   $(id).addClass('active');
+}
 function fxheader() {
     $(window).on('scroll', function () {
     var sticky = $('.bota_header'),
