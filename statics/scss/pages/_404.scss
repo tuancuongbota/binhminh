@@ -1,0 +1,44 @@
+.bota_page_404 {
+    padding: 48px 0;
+  
+    h1 {
+      font-size: 30px;
+      margin-top: 40px;
+      color: #000;
+      @media (max-width: 767px){
+       font-size: 20px;
+      }
+    }
+  
+    p {
+      color: #727272;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+  
+    a {
+      color: #fff;
+      border-color: #1f1f1f;
+      background: #1f1f1f;
+      padding: 10px 20px;
+      line-height: 1.5;
+      border-radius: 999px;
+      transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      border: 1px solid transparent;
+      display: inline-block;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      text-transform: uppercase;
+  
+      &:hover {
+        background-color: #f00401;
+        color: #fff;
+      }
+    }
+  }
+  
