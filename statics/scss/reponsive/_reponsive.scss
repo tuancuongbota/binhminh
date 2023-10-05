@@ -6,6 +6,32 @@ $landscape-mobile-big:"(max-width:767px)";
 $landscape-mobile:"(max-width:480px)";
 $portrait-mobile:"(max-width: 320px)";
 @media only screen and #{$landscape-tablets}{
+	.bota_header_language_mb {
+		ul li {
+		  padding: 0 5px;
+		  img{
+			opacity: .6;
+		  }
+		  &.active{
+			img{
+				opacity: 1;
+			}
+		  }
+	  
+		  &:first-child {
+			padding-left: 0;
+		  }
+		  a:before {
+			display: none;
+		  }
+		}
+	  }
+	  .bota_header_social_icons ul li{
+		&:last-child{
+			padding-right: 0;
+		}
+	  }
+	  
 	.bota_block_info {
 		.bota_block_info_img {
 			img {
