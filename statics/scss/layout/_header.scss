@@ -100,13 +100,19 @@
 		}
 	}
 }
-
+&_language_mb{
+	ul{
+		@media all and (max-width: 767px) {
+			justify-content: center;
+		}
+	}
+}
 &_language {
   ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
+	
     li {
       max-width: 50%;
       flex: 0 0 50%;
