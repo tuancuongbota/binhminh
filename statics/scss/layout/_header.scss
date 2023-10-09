@@ -184,18 +184,24 @@
 .bota_search {
 	display: flex;
     position: relative;
-	input {
-		height: 30px;
-		border: 1px solid #fec83f;
-		padding: 0 15px;
-		border-radius: 10px;
-		background: transparent;
-		color: #fff;
-		padding-right: 45px;
-		font-size: 14px;
-
-		&::-webkit-input-placeholder {
-		color: #ccc;
+	.search-area{
+		position: relative;
+		.bota_search_border {
+			line-height: 1;
+			input {
+				height: 30px;
+				border: 1px solid #fec83f;
+				padding: 0 15px;
+				border-radius: 10px;
+				background: transparent;
+				color: #fff;
+				padding-right: 45px;
+				font-size: 14px;
+		
+				&::-webkit-input-placeholder {
+				color: #ccc;
+				}
+			}
 		}
 	}
 
@@ -211,6 +217,8 @@
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 		cursor: pointer;
+		outline: none;
+		box-shadow: unset;
 		i {
 		width: 15px;
 		height: 15px;
