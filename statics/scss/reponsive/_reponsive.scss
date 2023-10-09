@@ -52,7 +52,7 @@ $portrait-mobile:"(max-width: 320px)";
 	.bota_header {
 		.bota_search {
 			position: absolute;
-			top: 83px;
+			top: 70px;
 			z-index: 2;
 			right: 0;
 			left: 0;
@@ -69,15 +69,20 @@ $portrait-mobile:"(max-width: 320px)";
 					position: relative;
 				}
 			}
-		  
-			input {
-			  background-color: #fff;
-			  height: 40px;
-    		  border-radius: unset;
-			  -webkit-appearance: none;
-			  width: 100%;
-			  color: #000 !important;
+			.search-area{
+				.bota_search_border{
+					input {
+						background-color: #fff;
+						height: 40px;
+						border-radius: unset;
+						-webkit-appearance: none;
+						width: 100%;
+						color: #000 !important;
+					  }
+				}
 			}
+		  
+			
 			 #BNC_btn_search {
 				height: 40px;
 				border-radius: unset;
